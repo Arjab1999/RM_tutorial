@@ -1,0 +1,38 @@
+ \begin{flushleft} Panel A: Without interaction of treatment and baseline outcome \end{flushleft} \vspace{3mm} {\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}                  \begin{tabular}{p{5cm}*{4}{>{\centering\arraybackslash}m{2.3cm}}}                 \toprule
+& \multicolumn{2}{c}{Endline 1} & \multicolumn{2}{c}{Endline 2} \\  \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & Gender attitudes index & Self-reported behavior index & Gender attitudes index & Self-reported behavior index \\
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+\midrule
+Treated             &       0.204\sym{***}&       0.260\sym{***}&       0.225\sym{***}&       0.316\sym{***}\\
+                    &     [0.029]         &     [0.029]         &     [0.028]         &     [0.042]         \\
+\addlinespace
+Treated $\times$ Female&      -0.042         &      -0.118\sym{***}&      -0.121\sym{***}&      -0.156\sym{***}\\
+                    &     [0.038]         &     [0.036]         &     [0.036]         &     [0.044]         \\
+\midrule
+Control group mean  &       0.000         &       0.000         &       0.333         &       0.000         \\
+Basic controls      &         Yes         &         Yes         &         Yes         &         Yes         \\
+Number of students  &      13,987         &      13,974         &      13,208         &      13,207         \\
+\bottomrule
+\end{tabular}
+}
+\vspace{1cm}
+ \begin{flushleft} Panel B: With interaction of treatment and baseline outcome \end{flushleft} {\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}                  \begin{tabular}{p{5cm}*{4}{>{\centering\arraybackslash}m{2.3cm}}}                 \toprule
+& \multicolumn{2}{c}{Endline 1} & \multicolumn{2}{c}{Endline 2} \\  \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & Gender attitudes index & Self-reported behavior index & Gender attitudes index & Self-reported behavior index \\
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+\midrule
+Treated             &       0.209\sym{***}&       0.270\sym{***}&       0.225\sym{***}&       0.299\sym{***}\\
+                    &     [0.029]         &     [0.032]         &     [0.029]         &     [0.045]         \\
+\addlinespace
+Treated $\times$ Female&      -0.053         &      -0.137\sym{***}&      -0.120\sym{***}&      -0.125\sym{**} \\
+                    &     [0.040]         &     [0.042]         &     [0.039]         &     [0.054]         \\
+\addlinespace
+Treated $\times$ Baseline outcome&       0.018         &      -0.014         &      -0.002         &       0.022         \\
+                    &     [0.017]         &     [0.019]         &     [0.017]         &     [0.022]         \\
+\midrule
+Control group mean  &       0.000         &       0.000         &       0.333         &       0.000         \\
+Basic controls      &         Yes         &         Yes         &         Yes         &         Yes         \\
+Number of students  &      13,987         &      13,974         &      13,208         &      13,207         \\
+\bottomrule
+\end{tabular}
+}

@@ -1,0 +1,48 @@
+{smcl}
+{txt}{sf}{ul off}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}F:\Exeter_coursework\Sem 1\Research Methods 1\149882-V1/output/adhoc_analysis/lee_bounds_both.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 2 Oct 2026, 19:33:12
+{smcl}
+{res}{sf}{ul off}{smcl}
+{res}{sf}{ul off}
+Endline 1 gender_index2 Trim rate:  .0054853831576435
+
+{smcl}
+{res}{sf}{ul off}{smcl}
+{res}{sf}{ul off}
+Endline 1 aspiration_index2 Trim rate:  .0004519847520613
+
+{smcl}
+{res}{sf}{ul off}{smcl}
+{res}{sf}{ul off}
+Endline 1 behavior_index2 Trim rate:  .0059684417694454
+
+{smcl}
+{res}{sf}{ul off}{smcl}
+{res}{sf}{ul off}
+Endline 2 gender_index2 Trim rate:  .0103086113931633
+
+{smcl}
+{res}{sf}{ul off}{smcl}
+{res}{sf}{ul off}
+Endline 2 aspiration_index2 Trim rate:  .007719321813848
+
+{smcl}
+{res}{sf}{ul off}{smcl}
+{res}{sf}{ul off}
+Endline 2 behavior_index2 Trim rate:  .0103206565193291
+
+{smcl}
+{res}{sf}{ul off}{smcl}
+{res}{sf}{ul off}
+Endline 2 scholar_index2 Trim rate:  .0081677836917702
+
+{smcl}
+{res}{sf}{ul off}{smcl}
+{res}{sf}{ul off}
+Endline 2 petition_index2 Trim rate:  .0123032515845336
+
+{smcl}
+{res}{sf}{ul off}

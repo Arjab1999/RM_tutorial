@@ -1,0 +1,750 @@
+\documentclass[letterpaper,12pt,pdftex]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{appendix}
+\usepackage{bigstrut}
+\usepackage{booktabs}
+\usepackage[capposition=top]{floatrow}
+\usepackage[pdftex]{color,graphicx}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage[colon]{natbib}
+\usepackage{pdflscape}
+\usepackage{pdfpages}
+\usepackage{rotating}
+\usepackage{setspace}
+\usepackage{soul}	% required for highlighting \hl{ ... }
+\usepackage{tabularx}
+\usepackage{threeparttable}
+\usepackage[compact]{titlesec}
+\usepackage{verbatim}
+%\usepackage[margin=0.5in]{geometry}
+\usepackage[left=50px,right=50px,top=50px,bottom=50px,paperwidth=8.5in,paperheight=11in]{geometry}
+\usepackage{longtable}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{makecell}
+\usepackage{comment}
+\usepackage{chngcntr}
+
+%%%% Added because of new MikTex bug with graphics package %%%%%%%%%%%
+\makeatletter
+\def\set@curr@file#1{%
+  \begingroup
+    \escapechar\m@ne
+    \xdef\@curr@file{\expandafter\string\csname #1\endcsname}%
+  \endgroup
+}
+\def\quote@name#1{"\quote@@name#1\@gobble""}
+\def\quote@@name#1"{#1\quote@@name}
+\def\unquote@name#1{\quote@@name#1\@gobble"}
+\makeatother
+
+%%%%% column types
+\newcolumntype{L}[1]{>{\hangindent=1em \raggedright \let\newline\\\arraybackslash}p{#1}}
+%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\newcolumntype{L}[1]{>{\hangindent=1em \raggedright \let\newline\\\arraybackslash}p{#1}}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\title{Paper tables}
+
+\date{\today}
+
+\begin{document}
+
+%%%%%%%%%%%%%%PAPER TABLES %%%%%
+
+\begin{table}
+\tabcolsep=2.8pt
+		\caption{Descriptive statistics: School and student characteristics at baseline}
+		\label{tab_sum_stats_school_students}
+		\begin{center}
+     \begin{footnotesize}
+			\input{../Tables/paper_tables/el2_tab_descriptive_school_students.tex}
+    		\end{footnotesize}
+        \end{center}
+\end{table}
+\clearpage
+
+\newpage
+\begin{table}		
+		\caption{Treatment effects on attitudes, aspirations, and behavior (Endline 1)}
+		\label{tab_el1_primary}
+		\begin{center}
+		\input{../Tables/paper_tables/el1_primary_outcomes_basic_combined.tex}
+		\end{center}		
+		\flushleft \footnotesize{Notes: All regressions control for the baseline analogue of the outcome, grade-gender and district-gender (columns 1 and 3) or grade and district (column 2) fixed effects, and missing flags for each variable used to construct the outcome index. Standard errors are clustered by school.}
+		
+\end{table}
+
+\clearpage
+\newpage
+
+\newgeometry{top=1in, bottom=1in, left=1.4cm, right=1.4cm}
+\begin{table}
+\tabcolsep=.5pt
+		\caption{Robustness check for social desirability bias (Endline 1)}
+		\label{tab_primary_socialdesirability}
+		\begin{center}
+			\input{../Tables/paper_tables/el1_primary_outcomes_highsd_std_combined.tex}
+		\end{center}
+\flushleft \footnotesize {Notes: Social desirability (SD) score is a baseline measure of the student's propensity to give socially desirable answers. High SD score refers to having an above-median score among students. All columns control for the baseline analogue of the outcome variable, grade-gender and district-gender (columns 1 and 3) or grade and district (column 2) fixed effects, and missing flags for each variable used to construct the outcome index. Standard errors are clustered by school. }
+\end{table}
+\restoregeometry
+
+\clearpage
+\newpage
+
+\begin{table}
+	\caption{Gender-specific treatment effects on attitudes, aspirations, and behavior (Endline 1)}
+	\label{tab_el1_primary_combined}
+	\begin{center}
+		\input{../Tables/paper_tables/el1_primary_outcomes_basic.tex}
+		\end{center}
+\flushleft \footnotesize{Notes: All regressions control for the baseline analogue of the outcome, grade and district fixed effects, and missing flags for each variable used to construct the outcome index. Standard errors are clustered by school.}
+\end{table}
+
+\clearpage
+\newpage
+
+
+%\begin{landscape}
+\newgeometry{top=1in, bottom=1in,left=1.4cm,right=1.4cm}
+	\begin{table}
+		\tabcolsep=2.8pt
+		\caption{Heterogeneous effects by parent attitudes (Endline 1)}
+		\label{tab_el1_heterog_patt}
+		\vspace{.4cm}
+		\begin{center}
+			\small
+			\input{../Tables/paper_tables/el1_heterog_gen_patt_cont_combined.tex}
+		\end{center}
+		\flushleft \footnotesize {Notes: All regressions control for the baseline analogue of the outcome, grade-gender and district-gender (columns 1 and 3) or grade and district (column 2) fixed effects, and missing flags for each variable used to construct the outcome index. Standard errors are clustered by school.}
+	\end{table}
+%\end{landscape}
+\restoregeometry
+\clearpage
+\newpage
+
+
+\begin{landscape}
+	\begin{table}
+		\tabcolsep=2.5pt
+		\caption{Treatment effects on perceptions of social norms (Endline 1)}
+		\label{tab_social_norms}
+		\vspace{.4cm}
+		\begin{center}
+			\small
+			\input{../Tables/paper_tables/el1_social_norms.tex}
+		\end{center}
+		\flushleft \footnotesize{Notes: All columns control for grade and district fixed effects. Each respondent was given either the set of questions on norms about work or norms about education, determined by randomization. The questions reported in columns 1 and 4, which ask about personal attitudes are not included in the gender attitudes index. Standard errors are clustered by school.}
+	\end{table}
+\end{landscape}
+\clearpage
+
+\newpage
+\newgeometry{top=1in, bottom=1in,left=1cm,right=1cm}
+\begin{table}
+	\tabcolsep=1.8pt
+	\caption{Treatment effects on other secondary outcomes (Endline 1)}
+	\label{tab_el1_sec}
+	\vspace{.4cm}
+	\begin{center}
+		\small
+		\input{../Tables/paper_tables/el1_secondary_outcomes.tex}
+	\end{center}
+	\flushleft \footnotesize {Notes: All regressions control for grade and district fixed effects. All columns except column 2 also control for the baseline analogue of the outcome. Columns 1 and 2 also control for missing flags for each variable used to construct the outcome index. Standard errors are clustered by school. }
+\end{table}
+\restoregeometry
+
+\clearpage
+
+
+
+%%%%%%%%%%%%%%%  Endline 2 %%%%%%%%%%%%%%
+\newpage
+%\begin{landscape}
+
+%\vspace{1in}
+\newgeometry{top=1in, bottom=1in, left=1cm, right=1cm}
+\begin{table}
+\tabcolsep=2.8pt
+		\caption{Treatment effects on attitudes, aspirations, and behavior (Endline 2)}
+		\label{tab_el2_primary}
+		\begin{center}
+		\input{../Tables/paper_tables/el2_primary_outcomes_basic_combined.tex}
+		\end{center}
+		\flushleft \footnotesize {Notes: All regressions control for grade-gender and district-gender fixed effects (columns 1, 3, and 5) or grade and district fixed effects (columns 2 and 4). Columns 1 to 3 also control for the baseline analogue of the outcome and missing flags for each variable used to construct the outcome index. The outcomes in columns 4 and 5 are binary variables, not indices, and were not collected for the 3\% of respondents who were surveyed by phone for the second endline (because these outcomes involved giving printed material to the respondent). Standard errors are clustered by school.}
+\end{table}
+\restoregeometry
+
+\clearpage
+\newpage
+
+\newgeometry{top = 1in, bottom=1in, left=1cm, right=1cm}
+\begin{table}
+	\tabcolsep=3.8pt
+	\caption{Robustness check for social desirability bias (Endline 2)}
+	\label{tab_primary_socialdesirability_el2}
+	\vspace{.4cm}
+	\begin{center}
+		\footnotesize
+		\input{../Tables/paper_tables/el2_primary_outcomes_highsd_std_combined.tex}
+	\end{center}
+	\flushleft \scriptsize {Notes: Social desirability (SD) score is a baseline measure of the student's propensity to give socially desirable answers. High SD score refers to having an above-median score among students. All regressions control for grade-gender and district-gender fixed effects (columns 1, 3, and 5) or grade and district fixed effects (columns 2 and 4). Columns 1 to 3 also control for the baseline analogue of the outcome and missing flags for each variable used to construct the outcome index. Standard errors are clustered by school.}
+\end{table}
+\restoregeometry
+
+
+\clearpage
+\newpage
+
+\begin{landscape}
+\begin{table}
+	\caption{Gender-specific treatment effects on attitudes, aspirations, and behavior (Endline 2)}
+	\label{tab_el2_primary_panels}
+	\centering 
+		\input{../Tables/paper_tables/el2_primary_outcomes_basic.tex}
+\flushleft \footnotesize {Notes: All regressions control for grade and district fixed effects, the baseline analogue of the outcome, and missing flags for each variable used to construct the outcome index. The outcome in columns 5 and 6 is a binary variable, not an index, and was not collected for the 3\% of respondents who were surveyed by phone for the second endline (because these outcomes involved giving printed material to the respondent). Standard errors are clustered by school.}
+\end{table}
+\end{landscape}
+
+\clearpage
+\newpage
+
+\normalsize
+
+
+\begin{table}
+\tabcolsep=0.2pt
+	\caption{Unpacking the treatment effect on scholarship applications (Endline 2)}
+	\label{tab_scholar_bl}
+		\vspace{.4cm}
+	\begin{center}
+		\small
+		\input{../Tables/paper_tables/el2_scholar_blvars_int.tex}
+	\end{center}
+	\flushleft \footnotesize {Notes: All regressions include grade and district fixed effects, the main effects for the baseline variable used in the interaction term, and flags for whether the baseline variable is missing. Standard errors are clustered by school.}
+\end{table}
+\clearpage
+	
+
+\begin{landscape}
+\begin{table}
+\tabcolsep=2.5pt
+		\caption{Treatment effects on perceptions of social norms (Endline 2)}
+		\label{tab_social_norms_el2}
+		\begin{center}
+			\small
+		\input{../Tables/paper_tables/el2_social_norms.tex}
+		\end{center}
+\flushleft \footnotesize {Notes: All columns control for grade and district fixed effects. Standard errors are clustered by school.}
+\end{table}
+\end{landscape}
+
+\newpage
+\clearpage
+
+\begin{table}	
+	\tabcolsep=.8pt
+	\caption{Treatment effects on other secondary outcomes (Endline 2)}
+	\label{tab_el2_sec}
+		\vspace{.4cm}
+	\begin{center}
+		\small
+		\input{../Tables/paper_tables/el2_secondary_outcomes.tex}
+	\end{center}
+	\flushleft \footnotesize {Notes: The unit of observation is the student in columns 1--5 and the school-grade in column 6. All columns control for grade and district fixed effects and, for columns 1 to 4, missing flags for each variable used to construct the outcome index. Column 1 also controls for the baseline analogue of the outcome variable. Standard errors are clustered by school. A higher value of the outcome in column 5 corresponds to higher reported harassment by girls. The outcome in column 6 is the proportion of boys who report engaging in sexual harassment, based on a list experiment. }
+\end{table}
+\clearpage
+
+%%%APPENDIX MARKER
+%%%%%%%%%%%%%%%%%%%%%%%% Appendix
+
+\setcounter{table}{0}
+\renewcommand{\tablename}{Appendix Table}
+\setcounter{figure}{0}
+\renewcommand{\figurename}{Appendix Figure}
+
+
+\newpage \normalsize
+{\flushleft{\large\textbf{ONLINE APPENDIX}} }
+
+
+\clearpage
+\newpage
+
+\begin{landscape}
+\begin{table}
+\caption{Baseline characteristics and balance by gender}
+\label{desc_stats_bygender}
+\begin{center}
+\scriptsize
+\input{../Tables/paper_tables/alt_el2_tab_descriptive_school_students.tex}
+\end{center}
+\end{table}
+%\flushleft \footnotesize{Notes: Tables report means and standard deviations.}
+\end{landscape}
+
+
+\clearpage\newpage
+
+\newgeometry{top=1in, bottom=1in,left=1cm,right=1cm}
+\captionof{table}{Testing for differential attrition and endline survey location}
+\label{tab_surveyplace_attrition_bindices}
+\begin{center}
+\tabcolsep=.8pt
+	\small
+	\input{../Tables/paper_tables/el2_surveyplace_attrition_bindices.tex}
+\end{center}
+\flushleft \footnotesize {Notes: Asterisks denote significance: $^*$ $p < .10$, $^{**}$ $p < .05$, $^{***}$ $p < .01$. All columns control for grade and district fixed effects. Standard errors are clustered by school. The sample for columns 1 and 4 is the baseline sample, and the sample for columns 2, 3, and 5 are those who were successfully surveyed in the relevant endline round.}
+\restoregeometry
+
+\clearpage
+\newpage
+
+\newpage \normalsize
+\begin{table}
+\tabcolsep=.8pt
+\caption{Reasons for attrition from the sample}
+\label{tab_sample_status}
+\begin{threeparttable}
+\centering
+\vspace{1cm}
+		{\captionsetup{justification=raggedright,singlelinecheck=false}
+		\small {
+ 		\subcaption*{Panel A: Endline 1}
+		% \vspace{-0.5cm}
+		\flushleft \hspace{1cm} \input{../Tables/paper_tables/el1_attrition_reasons.tex}
+	\vspace{2cm}
+		\subcaption*{Panel B: Endline 2}
+		% \vspace{-0.5cm}
+		\flushleft \hspace{1cm} \input{../Tables/paper_tables/el2_attrition_reasons.tex}
+		}
+		}
+
+\vspace{0.5cm}
+\flushleft \footnotesize {Notes: The sample analyzed in this table are the 14,853 potential endline respondents (baseline respondents plus 44 students enrolled in the school with missing baseline data). $^*$\;For Endline 2, we collected some data about students from their parents if the student was unavailable; these observations are considered to be in the ``attrited" sample, as the main outcome variables are missing for these respondents.}
+\end{threeparttable}
+\end{table}
+
+\clearpage
+\addtocounter{table}{-1}
+\newpage 
+
+\newgeometry{top=1in, bottom=1in, left=1cm, right=1cm}
+\normalsize
+\begin{table}
+\tabcolsep=5.8pt
+		\caption{Descriptive statistics on school enrollment at endline}\label{tab_sum_stats_outcomes}
+			\vspace{.4cm}
+		\begin{center}
+			\input{../Tables/paper_tables/el2_tab_outcome_stats.tex}
+        \end{center}
+\flushleft \footnotesize {Notes: Table reports variable means and standard deviations.}
+\end{table}
+\restoregeometry
+
+\clearpage
+\newpage
+
+\begin{table}
+	\tabcolsep=2.8pt
+	\caption{Baseline attitudes and aspirations by gender}\label{tab_sum_stats_vars}
+	\vspace{.4cm}
+	\begin{center}
+		\begin{small}
+			\input{../Tables/paper_tables/tab_descriptive_outcome_vars.tex}
+		\end{small}
+	\end{center}
+	\flushleft \footnotesize {Notes: Table reports variable means and standard deviations.}
+\end{table}
+
+\clearpage
+
+\newpage
+\newgeometry{left=1cm, right=1cm,  top = 2cm, bottom = 1in}
+\begin{table}
+	\caption{Double-LASSO-selected control variables}
+	\label{tab_lasso_controls}
+	\tabcolsep=.8pt
+	\tiny
+	\centering
+	\input{../Tables/paper_tables/el1_el2_matrix_ext_cntrls_8.tex}
+	\flushleft \footnotesize {Notes: X denotes variables selected for regressions that include both genders, while G and B are those selected for the girls-only and boys-only regressions. Variable names ending in `flag' are flags for a potential control variable having a missing value. Flags for missing components of the outcome index (when the outcome is an index) are also included in the set of potential control variables and sometimes selected but excluded from this table due to space.}
+\end{table}
+\restoregeometry
+
+\clearpage
+\newpage
+
+\begin{table}
+\tabcolsep=3.8pt
+		\caption{Correlates of primary outcomes in Endline 1 control group}
+		\label{tab_benchmark}
+			\vspace{.4cm}
+		\begin{center}
+			\small
+			\input{../Tables/paper_tables/el1_benchmarking_size.tex}
+		\end{center}
+\flushleft \footnotesize {Notes: Asterisks denote significance: $^*$ $p < .10$, $^{**}$ $p < .05$, $^{***}$ $p < .01$. Sample consists of Endline 1 respondents in the control group. Column 1 controls for grade and district fixed effects, and column 2 controls for grade-gender and district-gender fixed effects. Both columns control for missing flags for each variable used to construct the outcome index. Standard errors are clustered by school.}
+\end{table}
+
+\clearpage
+\newpage
+
+\begin{table}
+	\tabcolsep=3.8pt
+	\caption{Treatment effects on gender attitudes sub-indices (EL1)}
+	\label{tab_att_si_el1}
+	\vspace{.4cm}
+	\begin{center}
+		%\small
+		\input{../Tables/paper_tables/el1_att_subind.tex}
+	\end{center}
+	\flushleft \footnotesize {Notes: Asterisks denote significance: $^*$ $p < .10$, $^{**}$ $p < .05$, $^{***}$ $p < .01$. All regressions control for grade and district fixed effects and missing flags for each variable used to construct the outcome index. All columns except column 4 also include the baseline analogue of the outcome. The outcome in column 4 is not an index but a single variable that ranges from 0 to 1. Standard errors are clustered by school.}
+\end{table}
+
+\clearpage
+\newpage
+
+\newgeometry{left=1cm, right=1cm,  top = 1in, bottom = 1in}
+\begin{table}
+	\tabcolsep=.8pt
+	\caption{Treatment effects on individual gender attitudes (with Bonferroni correction)}
+	\label{tab_genatt_indivars}
+	\vspace{.4cm}
+	\begin{center}
+		\footnotesize{\input{../Tables/paper_tables/el1_el2_genatt_indvars.tex}}
+	\end{center}
+	\flushleft \footnotesize {Notes: Asterisks denote significance: $^*$ $p < .10$, $^{**}$ $p < .05$, $^{***}$ $p < .01$, using Bonferroni-adjusted p-values, i.e., the raw p-value is multiplied by 17. All regressions control for grade and district fixed effects and the baseline gender attitudes index. Standard errors are clustered by school.}
+\end{table}
+\restoregeometry
+
+\clearpage
+\newpage
+
+\newgeometry{left=2.5cm, right=2.5cm,  top = 1in, bottom = 1in}
+\begin{landscape}
+\begin{table}
+\caption{Treatment effects on primary outcomes with double-LASSO controls (EL1)}
+\label{tab_extended2}
+\centering
+\tabcolsep=.8pt
+\small
+\input{../Tables/paper_tables/el1_primary_outcomes_extended_all_8.tex}
+\flushleft \footnotesize {Notes: Asterisks denote significance: $^*$ $p < .10$, $^{**}$ $p < .05$, $^{***}$ $p < .01$. The regressions control for the double-LASSO-selected variables marked in Appendix Table \ref{tab_lasso_controls}. Standard errors are clustered by school.}
+\end{table}
+\end{landscape}
+\restoregeometry
+
+\clearpage
+\newpage
+
+\newgeometry{left=1cm, right=1cm,  top = 1in, bottom = 1in}
+\begin{table}
+\tabcolsep=.5pt
+\caption{Lee bounds on treatment effects for primary outcomes}
+\label{tab_lee_bounds_combined}
+\footnotesize
+\input{../Tables/paper_tables/el1_el2_primary_leebounds_combined.tex}
+\vspace{0.5cm}
+\flushleft \footnotesize {Notes: Asterisks denote significance: $* p < .10$, $** p < .05$, $*** p < .01$. All columns control for the baseline analogue of the outcome variable and grade-gender and and district-gender fixed effects. All regressions also control for missing flags for each variable used to construct the outcome index. Standard errors are clustered by school. The Lee bound estimates are calculated by trimming observations from either the treatment or control group, whichever has a lower rate of missing data, in order to equalize the missing rate across groups.}
+\end{table}
+\restoregeometry
+
+\clearpage
+\newpage
+
+\newgeometry{left=1cm, right=1cm, top=1in, bottom=1in}
+\begin{table}
+\tabcolsep=.6pt
+		\caption{Treatment effects on behavior sub-indices (EL1)}
+		\label{tab_beh_si_el1}
+		\vspace{.4cm}
+		\begin{center}
+			\small
+			\input{../Tables/paper_tables/el1_beh_subind.tex}
+		\end{center}
+\flushleft \footnotesize {Notes: Asterisks denote significance: $^*$ $p < .10$, $^{**}$ $p < .05$, $^{***}$ $p < .01$. All regressions control for grade and district fixed effects and missing flags for each variable used to construct the outcome index. All columns except column 3 also include the baseline analogue of the outcome. Standard errors are clustered by school.}
+\end{table}
+\restoregeometry
+
+\clearpage
+\newpage
+
+\begin{table}
+	\tabcolsep=12pt
+	\caption{Treatment effects on components of girls' aspirations index, with Bonferroni correction (EL1)}
+	\label{tab_aspatt_ivars_el1}
+	\begin{center}
+		\small{\input{../Tables/paper_tables/el1_aspiration_indvars.tex}}
+	\end{center}
+	\flushleft \footnotesize {Notes: Each row corresponds to a different regression of the individual variables on treatment. All regressions control for grade and district fixed effects and the baseline girls' aspirations index. Asterisks denote significance using Bonferroni correction (divides by number of variables in index -- 5 -- for the critical p-values.}
+\end{table}
+
+
+
+\clearpage
+\newpage
+
+\begin{table}
+\tabcolsep=3pt
+		\caption{Treatment effects on components of self-reported behavior index, with Bonferroni correction (EL1)}
+		\label{tab_behatt_ivars_el1}
+		\begin{center}
+			\footnotesize{\input{../Tables/paper_tables/el1_behavior_indvars.tex}}
+		\end{center}
+\flushleft \footnotesize {Notes: Each cell corresponds to a different regression of the individual variables on treatment. All regressions control for grade and district fixed effects and the baseline self-reported behavior index. Asterisks denote significance using Bonferroni correction (divides by number of variables in index for the critical p-values, i.e. 6 for common variables, 9 for girls-only variables.}
+\end{table}
+
+\clearpage
+\newpage
+
+
+
+\begin{landscape}
+\footnotesize
+\begin{table}
+	\footnotesize
+	\caption{Robustness check for social desirability bias using continuous measure}\label{tab_sds_cont_std}
+	\begin{center}
+	\input{../Tables/paper_tables/sdsscore_std_primary_outcomes_combined.tex}
+\end{center}
+\flushleft \footnotesize {Notes: Asterisks denote significance: $* p < .10$, $** p < .05$, $*** p < .01$. Social desirability score is a baseline measure of the student's propensity to give socially desirable answers. All columns control for the baseline analogue of the outcome variable where appropriate, grade-gender and district-gender fixed effects, and missing flags for each variable used to construct the outcome index. Standard errors are clustered by school. }
+\end{table}
+\end{landscape}
+
+\clearpage
+\newpage
+
+\begin{table}
+	\tabcolsep=1.8pt
+	\caption{Heterogeneity by gender, controlling for heterogeneity by BL attitudes}
+	\label{tab_gender_satt_bl}
+	\vspace{.4cm}
+	\begin{center}
+		\small
+		\input{../Tables/paper_tables/el1_el2_heterog_gender_att_bl.tex}
+	\end{center}
+	\flushleft \footnotesize {Notes: Asterisks denote significance: $^*$ $p < .10$, $^{**}$ $p < .05$, $^{***}$ $p < .01$. All regressions control for grade-gender and district-gender fixed effects, the baseline analogue of the outcome and missing flags for each variable used to construct the outcome index. Standard errors are clustered by school.}
+\end{table}
+
+\clearpage
+\newpage
+
+\newgeometry{top=1in, bottom=1in, left=.75in, right=.75in}
+\begin{table}
+\tabcolsep=2.8pt
+		\caption{Heterogeneity by gender, controlling for heterogeneity by wealth proxies}
+		\label{tab_hetgen_wealth}
+		\vspace{.4cm}
+		\begin{center}
+			\small
+			\input{../Tables/paper_tables/el1_el2_hetgen_wealth_combined.tex}
+		\end{center}
+\flushleft \footnotesize {Notes: Asterisks denote significance: $^*$ $p < .10$, $^{**}$ $p < .05$, $^{***}$ $p < .01$. All regressions control for grade-gender and district-gender fixed effects, the baseline analogue of the outcome and missing flags for each variable used to construct the outcome index. Standard errors are clustered by school.}
+\end{table}
+\restoregeometry
+
+\clearpage
+\newpage
+
+\newgeometry{left=1cm, right=1cm, top = 1in, bottom = 1in}
+\begin{table}
+\tabcolsep=.5pt
+\caption{Lee bounds on treatment effects, by gender}
+\label{tab_lee_bounds}
+\footnotesize
+\input{../Tables/paper_tables/el1_el2_primary_leebounds.tex}
+\vspace{0.5cm}
+\flushleft \footnotesize {Notes: Asterisks denote significance: $* p < .10$, $** p < .05$, $*** p < .01$. All columns control for the baseline analogue of the outcome variable, grade, and district fixed effects. All regressions also control for missing flags for each variable used to construct the outcome index. Standard errors are clustered by school. The Lee bound estimates are calculated by trimming observations from either the treatment or control group, whichever has a lower rate of missing data, in order to equalize the missing rate across groups.}
+\end{table}
+\restoregeometry
+
+\clearpage
+\newpage
+
+\begin{table}
+\tabcolsep=2.8pt
+		\caption{Robustness check for social desirability bias, by gender (EL1)}
+		\label{el1_sds_panels}
+		\vspace{.4cm}
+		\begin{center}
+			\footnotesize
+			\input{../Tables/paper_tables/el1_primary_outcomes_highsd_std.tex}
+		\end{center}
+\flushleft \footnotesize {Notes: Asterisks denote significance: $^*$ $p < .10$, $^{**}$ $p < .05$, $^{***}$ $p < .01$. Social desirability (SD) score is a baseline measure of the student's propensity to give socially desirable answers. High SD score refers to having a score that is above median for the sample. All regressions control for the baseline analogue of the outcome, grade and district fixed effectsand missing flags for each variable used to construct the outcome index. Standard errors are clustered by school.}
+\end{table}
+
+\clearpage
+\newpage
+
+%\begin{landscape}
+\begin{table}
+\tabcolsep=2.8pt
+		\caption{Heterogeneity by binary measure of baseline parent attitudes (EL1)}
+		\label{tab_el1_heterog_patt_abovemed}
+		\begin{center}
+			\small
+		\input{../Tables/paper_tables/el1_heterog_gen_patt.tex}
+		\end{center}
+\flushleft \footnotesize {Notes: Asterisks denote significance: $* p < .10$, $** p < .05$, $*** p < .01$. All columns control for the baseline analogue of the outcome variable and grade-gender and district-gender fixed effects, and missing flags for each variable used to construct the outcome index. Standard errors are clustered by school.}
+\end{table}
+%\end{landscape}
+
+\clearpage
+\newpage
+
+\begin{table}
+	\tabcolsep=.8pt
+	\caption{Treatment effects on school performance (EL1)}
+	\label{tab_school_performance}
+	\begin{threeparttable}
+		\centering
+		\vspace{1cm}
+		{\captionsetup{justification=raggedright,singlelinecheck=false}
+			\small {
+				\subcaption*{Panel A: SCERT school data (2014-16)}
+				\flushleft \hspace{1cm} \input{../Tables/paper_tables/school_performance_score.tex}
+				\vspace{2cm}
+				\subcaption*{Panel B: 10th board exam data (2017)}
+				\flushleft \hspace{1cm} \input{../Tables/paper_tables/school_performance_pass.tex}
+			}
+		}
+		
+		\vspace{0.5cm}
+		\flushleft \footnotesize {Notes: Asterisks denote significance: $^*$ $p < .10$, $^{**}$ $p < .05$, $^{***}$ $p < .01$. Each observation is a school. We were able to match 237 and 307 sample schools with the SCERT and board exam datasets, respectively. The first panel uses data for both cohorts in our sample, from when each was in Grade 8. The second panel uses only the older cohort because the outcome is an exam taken in Grade 10 and the younger cohort was in Grade 9 at the time of these data. Some schools have missing observations in the SCERT dataset for certain subjects, so the sample size varies across columns within the first panel. All columns control for district fixed effects. Standard errors are heteroskedasticity-robust.}
+	\end{threeparttable}
+\end{table}
+
+\addtocounter{table}{-1}
+
+\clearpage
+\newpage
+
+\begin{table}
+\footnotesize
+\caption{Association between stated and revealed preferences, by social desirability score (control group only)}\label{sch_dowry_sds}
+\begin{center}
+	\input{../Tables/paper_tables/sch_dowry_sds.tex}
+\end{center}
+\flushleft{Notes: Asterisks denote significance: $* p < .10$, $** p < .05$, $*** p < .01$. Sample includes control group only. All columns control for grade and district fixed effects. Standard errors are clustered by school.}
+\end{table}
+
+\clearpage
+\newpage
+
+\newgeometry{left=1cm, right=1cm, top = 1in, bottom = 1in}
+\begin{landscape}
+\begin{table}
+\caption{Treatment effects on primary outcomes with double-LASSO controls (EL2)}
+\label{tab_extended2_el2}
+\begin{center}
+\tabcolsep=.8pt
+\footnotesize
+\input{../Tables/paper_tables/el2_primary_outcomes_extended_all_8.tex}
+\flushleft{Notes: Asterisks denote significance: $* p < .10$, $** p < .05$, $*** p < .01$. The regressions control for the double-LASSO-selected variables marked in Appendix Table \ref{tab_lasso_controls}. For outcomes used in Endline 1 also (Gender attitudes index, Girls' aspirations index, and Self-reported behavior index), for consistency, we use the control variables selected by double LASSO with the Endline 1 data rather than selecting new control variables for Endline 2. Standard errors are clustered by school.}
+\end{center}
+\end{table}
+\end{landscape}
+\restoregeometry
+
+\clearpage
+\newpage
+
+\newgeometry{top=1in,bottom=1in,left=1cm,right=1cm}
+\begin{table}
+\tabcolsep=2.8pt
+		\caption{Robustness check for social desirability bias, by gender (EL2)}
+		\label{el2_sds_panels}
+		\vspace{.4cm}
+		\begin{center}
+			\footnotesize
+			\input{../Tables/paper_tables/el2_primary_outcomes_highsd_std.tex}
+		\end{center}
+\flushleft \footnotesize {Notes: Asterisks denote significance: $^*$ $p < .10$, $^{**}$ $p < .05$, $^{***}$ $p < .01$. Social desirability (SD) score is a baseline measure of the student's propensity to give socially desirable answers. High SD score refers to having a score that is above median for the sample. All regressions control for the baseline analogue of the outcome where appropriate, and grade and district fixed effects, and missing flags for each variable used to construct the outcome index if applicable. Standard errors are clustered by school.}
+\end{table}
+\restoregeometry
+
+
+
+\clearpage
+\newpage
+
+\begin{table}
+\tabcolsep=.8pt
+		\caption{Treatment effects on gender attitudes sub-indices (EL2)}
+		\label{tab_att_si_el2}
+		\begin{center}
+			\small
+			\input{../Tables/paper_tables/el2_att_subind.tex}
+		\end{center}
+\flushleft \footnotesize {Notes: Asterisks denote significance: $* p < .10$, $** p < .05$, $*** p < .01$. All columns control for the baseline analogue of the outcome variable (except for column 4), and grade and district fixed effects, and missing flags for each variable used to construct the outcome index. Standard errors are clustered by school. }
+\end{table}
+
+\clearpage
+\newpage
+
+\newgeometry{top = 1in, bottom=1in, left=1cm, right=1cm}
+\begin{table}
+\tabcolsep=.4pt
+		\caption{Treatment effects on self-reported behavior sub-indices (EL1)}
+		\label{tab_beh_si_el2}
+		\begin{center}
+			\small
+			\input{../Tables/paper_tables/el2_beh_subind.tex}
+		\end{center}
+\flushleft \footnotesize {Notes: Asterisks denote significance: $* p < .10$, $** p < .05$, $*** p < .01$. All columns control for the baseline analogue of the outcome variable (except for column 3), and grade and district fixed effects, and missing flags for each variable used to construct the outcome index. Standard errors are clustered by school. }
+\end{table}
+\restoregeometry
+
+\clearpage
+\newpage
+
+\begin{table}
+\tabcolsep=8pt
+		\caption{Treatment effects on components of girls' aspirations index, with Bonferroni correction (EL2)}
+		\label{tab_aspatt_ivars_el2}
+		\begin{center}
+			\footnotesize{\input{../Tables/paper_tables/el2_aspiration_indvars.tex}}
+		\end{center}
+\flushleft \footnotesize {Notes: Each row corresponds to a different regression of the individual variables on treatment. All regressions control for grade and district fixed effects and the baseline girls' aspirations index. Asterisks denote significance using Bonferroni correction (divides by number of variables in index, which is 11, for the critical p-values).}
+\end{table}
+
+\clearpage
+\newpage
+
+\begin{table}
+\tabcolsep=6pt
+		\caption{Treatment effects on components of self-reported behavior index, with Bonferroni correction (EL2)}
+		\label{tab_behatt_ivars_el2}
+		\begin{center}
+			\footnotesize{\input{../Tables/paper_tables/el2_behavior_indvars.tex}}
+		\end{center}
+\flushleft \footnotesize {Notes: Each cell corresponds to a different regression of the individual variables on treatment. All regressions control for grade and district fixed effects and the baseline self-reported behavior index. Asterisks denote significance using Bonferroni correction (divides by number of variables in index for the critical p-values, i.e. is 9 for common variables, 10 for girls-only variables).}
+\end{table}
+
+\clearpage
+\newpage
+
+
+
+\begin{table}
+	\caption{Heterogeneity of effects by baseline parent attitudes (EL2)}\label{tab_parent_heterog_el2}
+	\centering
+	\tabcolsep=.8pt
+	\footnotesize
+	\input{../Tables/paper_tables/el2_heterog_gen_patt_combined.tex}
+	\flushleft \footnotesize {Notes: Asterisks denote significance: $^*$ $p < .10$, $^{**}$ $p < .05$, $^{***}$ $p < .01$. All regressions control for the baseline analogue of the outcome where applicable (columns 1-3), grade-gender and district-gender fixed effects and missing flags for each variable used to construct the outcome index. Standard errors are clustered by school.}
+\end{table}
+
+\end{document}

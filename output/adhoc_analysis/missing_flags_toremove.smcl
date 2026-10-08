@@ -1,0 +1,20 @@
+{smcl}
+{txt}{sf}{ul off}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}F:\Exeter_coursework\Sem 1\Research Methods 1\149882-V1/output/adhoc_analysis/missing_flags_toremove.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 2 Oct 2026, 19:32:30
+{txt}
+{com}. qui log off
+{smcl}
+{com}{sf}{ul off}{smcl}
+{com}{sf}{ul off}{txt}
+{com}. di "LASSO flags that are only 1 at school 2711:"
+{res}LASSO flags that are only 1 at school 2711:
+{txt}
+{com}. di "`overall_flags_toremove'"
+{res}B_Smuslim_flag B_q22_toilets_flag
+{txt}
+{com}. qui log off 
+{smcl}
+{com}{sf}{ul off}

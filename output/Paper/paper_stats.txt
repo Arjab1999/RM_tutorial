@@ -1,0 +1,76 @@
+Intro pg2, total schools,     314
+3.Study Design - 3.1 Experimental Design pg9, co-ed schools,     215
+3.Study Design - 3.1 Experimental Design pg9, girls only schools,      59
+3.Study Design - 3.1 Experimental Design pg9, boys only schools,      40
+3.Study Design - 3.1 Experimental Design pg9, treated schools,     150
+3.Study Design - 3.1 Experimental Design pg9, control schools,     164
+Intro pg2, total students,  14,853
+3.Study Design - 3.2 Enrollment of baseline participants pg9, students covered in baseline,  14,809
+3.Study Design - 3.2 Enrollment of baseline participants pg10, Num. parents with complete BL surveys,   6,022
+Data Appendix A.1 Sample selection and tracking, Num. fathers with complete BL surveys,   2,546
+Data Appendix A.1 Sample selection and tracking, Num. mothers with complete BL surveys,   3,476
+3.Study Design - 3.2 Enrollment of baseline participants pg10, mean baseline student age,  11.844
+3.Study Design pg10, mean baseline mother age,  35.520
+3.Study Design pg10, mean baseline father age,  40.557
+3.Study Design pg10, % mothers work full time,  29.206
+Intro pg2, mean age at EL2,  16.973
+Abstract, EL1 gender attitudes SD,  0.1797   
+Intro pg3, EL1 gender attitudes SD,  0.1797   
+4.2Short-run results pg14, EL1 gender attitudes SD,  0.1797   
+4.2Short-run results pg14, EL1 gender attitudes p-value, 0.00000   
+4.2Short-run results pg16, EL1 girls' aspirations SD,  0.0295   
+4.2Short-run results pg16, EL1 self-reported behavior SD,  0.1964   
+4.2Short-run results pg20, EL1 secondary outcomes: percent of baseline IAT responses that were invalidated,  13.06%          
+4.3Medium-run results pg20, EL2 gender attitudes SD,  0.1597   
+4.3Medium-run results pg20, EL2 gender attitudes control mean,  0.3326   
+4.3Medium-run results pg21, EL2 behavior attitudes SD,  0.2271   
+4.3Medium-run results pg21, EL2 scholarship applied pp increase,  3.1416pp   
+4.3Medium-run results pg21, EL2 scholarship applied %,  7.7039%   
+4.3Medium-run results pg21, EL2 applied to scholarship pval, 0.06693   
+4.3Medium-run results pg19, EL2 control group % signed petition, 14.9986%   
+Medium-run results, EL2 signed petition pval, 0.16136   
+4.3Medium-run results pg19, EL2 % increase in likelihood of signing petition given effect size of self-reported attitudes, 38.0207%   
+4.3 Medium-run results - 4.3.1 Effects on primary outcomes, magnitude by which total effect for above-median aspirations higher,  3.7895
+4.3 Medium-run results - 4.3.1 Effects on primary outcomes, BL % girls talked to parents about educ goals , 79.6401%
+4.3 Medium-run results - 4.3.1 Effects on primary outcomes, Correlation coef. BL aspirations index and BL discussing educ goals with parents ,  0.6413
+4.3Medium-run results pg20, EL2 gender attitudes (boys) SD,  0.2179   
+4.3Medium-run results pg20, EL2 gender attitudes (girls) SD,  0.1115   
+4.3Medium-run results - 4.3.2 Heterogenous effects by gender pg20, EL2 gender attitudes (girls) as % of short-run effect on girls,  0.1115%  
+4.3Medium-run results pg21, EL2 secondary outcomes: girls' education SD,  0.0580
+3.Study Design - 3.Endline data collection pg11, EL1 students (out of those surveyed in BL),  13,943
+3.Study Design - 3.Endline data collection pg11, EL1 attrition rate,  5.8478%
+3.Study Design - 3.Endline data collection pg11, EL1 students (all),  13,987
+3.Study Design pg11, EL2 students (out of those surveyed in BL),  13,646
+3.Study Design pg11, EL2 attrition rate,  7.8533%
+3.Study Design pg11, EL2 students (all),  13,685
+3.Study Design pg11, % of EL1 respondents surveyed at school, 75.4486
+3.Study Design pg11, % of EL1 respondents surveyed at home, 24.4155
+3.Study Design pg11, % of EL1 respondents surveyed on phone,  0.1358
+3.4Primary Outcomes pg13, % of EL2 respondents surveyed on phone,  2.7914%
+3. Study Design - 3.4 Primary Outcomes pg11, % EL1 enrolled in same school as baseline, 81.5978 
+3. Study Design - 3.4 Primary Outcomes pg11, % EL1 dropped out,  7.9316 
+3. Study Design - 3.4 Primary Outcomes pg11, % EL1 aware of program, 86.5559 
+3.4Primary Outcomes pg12, % boys believe woman's role is homemaker, 79.8908 
+3.4Primary Outcomes pg12, % girls believe woman's role is homemaker, 59.7219 
+4.2Short-run results pg15, EL1 gender attitudes SD (w/ LASSO-selected controls),  0.1701   
+4.3Medium-run results pg21, EL2 applied to scholarship w/ LASSO-selected controls pval, 0.13073   
+4.3Medium-run results pg21, EL2 signed petition w/ LASSO-selected controls pval, 0.07107   
+4.3Medium-run results - 4.3.1 Effects on primary outcomes, EL2 % don't support for dowry in treatment group, 83.0945%
+4.3Medium-run results - 4.3.1 Effects on primary outcomes, EL2 % don't support for dowry in control group, 80.7414%
+4.3Medium-run results - 4.3.1 Effects on primary outcomes, EL2 no-support for dowry treated=control pval, 0.02441   
+4.2Short-run results pg15, EL1 gender attitudes SD (lower bound),  0.1627   
+4.2Short-run results pg15, EL1 gender attitudes SD - diff between girls and boys,  0.4982
+4.2Short-run results pg15, EL1 gender attitudes - treatment effect as % of status quo gender gap in attitudes, 36.0744
+4.2Short-run results pg15, EL1 gender attitudes on BL parent gender attitudes (SD),  0.0544
+4.2Short-run results pg17, EL1 fertility attitudes SD,  0.0158
+3.3Study design pg 11, Distance between Endline 1 survey date and program end (Sept 30 2016), avg = 3.53, min = 2, max = 10
+Abstract, persuasion rate EL1, 15.5441%
+Intro pg3, persuasion rate EL1, 15.5441%
+4.2Short-run results pg15, persuasion rate EL1, 15.5441%
+4.2Short-run results pg15, EL1 control group % with gender-regressive views, 35.3956%
+4.2Short-run results pg15, EL1 treatment group % with gender-regressive views, 29.8937%
+4.2Short-run results pg17, EL1 behavior treated*female coef, -0.1215   
+4.2Short-run results pg17, EL1 behavior treated*female pval, 0.00079   
+3.4Primary Outcomes pg12, EL1 gender attitudes variable count, 17
+3.4Primary Outcomes pg12, EL1 girls' aspirations variable count, 5
+3.4Primary Outcomes pg12, EL1 common behavior variable count, 6

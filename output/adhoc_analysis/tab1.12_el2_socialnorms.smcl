@@ -1,0 +1,212 @@
+{smcl}
+{txt}{sf}{ul off}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}F:\Exeter_coursework\Sem 1\Research Methods 1\149882-V1/output/adhoc_analysis/tab1.12_el2_socialnorms.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 2 Oct 2026, 19:32:47
+{smcl}
+{res}{sf}{ul off}{smcl}
+{txt}{sf}{ul off}Column: E2_Sallow_work_s
+{p 0 6 2}note: {bf:district_gender_1} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:district_gender_8} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gender_grade_1} omitted because of collinearity.{p_end}
+
+Linear regression                               Number of obs     = {res}     6,736
+                                                {txt}F(11, 313)        =  {res}    42.24
+                                                {txt}Prob > F          = {res}    0.0000
+                                                {txt}R-squared         = {res}    0.1026
+                                                {txt}Root MSE          =    {res} .29097
+
+{txt}{ralign 83:(Std. err. adjusted for {res:314} clusters in {res:Sschool_id})}
+{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 19}{c |}{col 31}    Robust
+{col 1} E2_Sallow_work_s{col 19}{c |} Coefficient{col 31}  std. err.{col 43}      t{col 51}   P>|t|{col 59}     [95% con{col 72}f. interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}B_treat {c |}{col 19}{res}{space 2} .1186504{col 31}{space 2} .0156639{col 42}{space 1}    7.57{col 51}{space 3}0.000{col 59}{space 4} .0878305{col 72}{space 3} .1494703
+{txt}district_gender_1 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+district_gender_2 {c |}{col 19}{res}{space 2}-.0264594{col 31}{space 2} .0089927{col 42}{space 1}   -2.94{col 51}{space 3}0.004{col 59}{space 4}-.0441532{col 72}{space 3}-.0087656
+{txt}district_gender_3 {c |}{col 19}{res}{space 2} .0901382{col 31}{space 2} .0231457{col 42}{space 1}    3.89{col 51}{space 3}0.000{col 59}{space 4} .0445974{col 72}{space 3} .1356791
+{txt}district_gender_4 {c |}{col 19}{res}{space 2}-.0113293{col 31}{space 2} .0078954{col 42}{space 1}   -1.43{col 51}{space 3}0.152{col 59}{space 4}-.0268641{col 72}{space 3} .0042055
+{txt}district_gender_5 {c |}{col 19}{res}{space 2} .1041624{col 31}{space 2} .0246236{col 42}{space 1}    4.23{col 51}{space 3}0.000{col 59}{space 4} .0557138{col 72}{space 3} .1526111
+{txt}district_gender_6 {c |}{col 19}{res}{space 2}-.0080768{col 31}{space 2} .0081232{col 42}{space 1}   -0.99{col 51}{space 3}0.321{col 59}{space 4}-.0240598{col 72}{space 3} .0079062
+{txt}district_gender_7 {c |}{col 19}{res}{space 2} .1298161{col 31}{space 2} .0271338{col 42}{space 1}    4.78{col 51}{space 3}0.000{col 59}{space 4} .0764283{col 72}{space 3} .1832039
+{txt}district_gender_8 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+{space 3}gender_grade_1 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+{space 3}gender_grade_2 {c |}{col 19}{res}{space 2} .0345779{col 31}{space 2} .0142066{col 42}{space 1}    2.43{col 51}{space 3}0.015{col 59}{space 4} .0066255{col 72}{space 3} .0625304
+{txt}{space 3}gender_grade_3 {c |}{col 19}{res}{space 2} .3232601{col 31}{space 2} .0231686{col 42}{space 1}   13.95{col 51}{space 3}0.000{col 59}{space 4} .2776743{col 72}{space 3}  .368846
+{txt}{space 3}gender_grade_4 {c |}{col 19}{res}{space 2} .3265326{col 31}{space 2} .0237265{col 42}{space 1}   13.76{col 51}{space 3}0.000{col 59}{space 4}  .279849{col 72}{space 3} .3732163
+{txt}{space 8}gXB_treat {c |}{col 19}{res}{space 2} -.105459{col 31}{space 2} .0160864{col 42}{space 1}   -6.56{col 51}{space 3}0.000{col 59}{space 4}-.1371102{col 72}{space 3}-.0738078
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .6512655{col 31}{space 2} .0222103{col 42}{space 1}   29.32{col 51}{space 3}0.000{col 59}{space 4} .6075652{col 72}{space 3} .6949658
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{smcl}
+{res}{sf}{ul off}{smcl}
+{txt}{sf}{ul off}Column: E2_Scommunity_allow_work_s
+{p 0 6 2}note: {bf:district_gender_1} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:district_gender_8} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gender_grade_1} omitted because of collinearity.{p_end}
+
+Linear regression                               Number of obs     = {res}     6,474
+                                                {txt}F(11, 313)        =  {res}     5.66
+                                                {txt}Prob > F          = {res}    0.0000
+                                                {txt}R-squared         = {res}    0.0119
+                                                {txt}Root MSE          =    {res} .48073
+
+{txt}{ralign 83:(Std. err. adjusted for {res:314} clusters in {res:Sschool_id})}
+{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 19}{c |}{col 31}    Robust
+{col 1}E2_Scomm~w_work_s{col 19}{c |} Coefficient{col 31}  std. err.{col 43}      t{col 51}   P>|t|{col 59}     [95% con{col 72}f. interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}B_treat {c |}{col 19}{res}{space 2} .0699527{col 31}{space 2} .0188933{col 42}{space 1}    3.70{col 51}{space 3}0.000{col 59}{space 4} .0327788{col 72}{space 3} .1071266
+{txt}district_gender_1 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+district_gender_2 {c |}{col 19}{res}{space 2} .0032346{col 31}{space 2} .0317069{col 42}{space 1}    0.10{col 51}{space 3}0.919{col 59}{space 4} -.059151{col 72}{space 3} .0656203
+{txt}district_gender_3 {c |}{col 19}{res}{space 2} .0708014{col 31}{space 2} .0286135{col 42}{space 1}    2.47{col 51}{space 3}0.014{col 59}{space 4} .0145023{col 72}{space 3} .1271006
+{txt}district_gender_4 {c |}{col 19}{res}{space 2}-.0395039{col 31}{space 2} .0303219{col 42}{space 1}   -1.30{col 51}{space 3}0.194{col 59}{space 4}-.0991644{col 72}{space 3} .0201566
+{txt}district_gender_5 {c |}{col 19}{res}{space 2} .1566912{col 31}{space 2} .0280858{col 42}{space 1}    5.58{col 51}{space 3}0.000{col 59}{space 4} .1014304{col 72}{space 3} .2119519
+{txt}district_gender_6 {c |}{col 19}{res}{space 2} -.063167{col 31}{space 2} .0314501{col 42}{space 1}   -2.01{col 51}{space 3}0.045{col 59}{space 4}-.1250474{col 72}{space 3}-.0012867
+{txt}district_gender_7 {c |}{col 19}{res}{space 2} .0857112{col 31}{space 2} .0311542{col 42}{space 1}    2.75{col 51}{space 3}0.006{col 59}{space 4} .0244131{col 72}{space 3} .1470093
+{txt}district_gender_8 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+{space 3}gender_grade_1 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+{space 3}gender_grade_2 {c |}{col 19}{res}{space 2} .0212673{col 31}{space 2} .0173211{col 42}{space 1}    1.23{col 51}{space 3}0.220{col 59}{space 4}-.0128131{col 72}{space 3} .0553478
+{txt}{space 3}gender_grade_3 {c |}{col 19}{res}{space 2} .1954197{col 31}{space 2} .0395157{col 42}{space 1}    4.95{col 51}{space 3}0.000{col 59}{space 4} .1176698{col 72}{space 3} .2731697
+{txt}{space 3}gender_grade_4 {c |}{col 19}{res}{space 2} .1706192{col 31}{space 2} .0392417{col 42}{space 1}    4.35{col 51}{space 3}0.000{col 59}{space 4} .0934083{col 72}{space 3} .2478301
+{txt}{space 8}gXB_treat {c |}{col 19}{res}{space 2}-.0666316{col 31}{space 2} .0246564{col 42}{space 1}   -2.70{col 51}{space 3}0.007{col 59}{space 4}-.1151448{col 72}{space 3}-.0181184
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .4883352{col 31}{space 2} .0276911{col 42}{space 1}   17.64{col 51}{space 3}0.000{col 59}{space 4} .4338509{col 72}{space 3} .5428195
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{smcl}
+{res}{sf}{ul off}{smcl}
+{txt}{sf}{ul off}Column: E2_Scommunity_work_s
+{p 0 6 2}note: {bf:district_gender_2} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:district_gender_7} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gender_grade_2} omitted because of collinearity.{p_end}
+
+Linear regression                               Number of obs     = {res}     6,447
+                                                {txt}F(11, 313)        =  {res}    10.94
+                                                {txt}Prob > F          = {res}    0.0000
+                                                {txt}R-squared         = {res}    0.0226
+                                                {txt}Root MSE          =    {res} .46556
+
+{txt}{ralign 83:(Std. err. adjusted for {res:314} clusters in {res:Sschool_id})}
+{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 19}{c |}{col 31}    Robust
+{col 1}E2_Scommunity_w~s{col 19}{c |} Coefficient{col 31}  std. err.{col 43}      t{col 51}   P>|t|{col 59}     [95% con{col 72}f. interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}B_treat {c |}{col 19}{res}{space 2} .0923147{col 31}{space 2}  .018589{col 42}{space 1}    4.97{col 51}{space 3}0.000{col 59}{space 4} .0557394{col 72}{space 3}   .12889
+{txt}district_gender_1 {c |}{col 19}{res}{space 2}-.1236115{col 31}{space 2} .0313763{col 42}{space 1}   -3.94{col 51}{space 3}0.000{col 59}{space 4}-.1853466{col 72}{space 3}-.0618765
+{txt}district_gender_2 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+district_gender_3 {c |}{col 19}{res}{space 2} -.030331{col 31}{space 2} .0271688{col 42}{space 1}   -1.12{col 51}{space 3}0.265{col 59}{space 4}-.0837875{col 72}{space 3} .0231256
+{txt}district_gender_4 {c |}{col 19}{res}{space 2}-.0299033{col 31}{space 2} .0219721{col 42}{space 1}   -1.36{col 51}{space 3}0.175{col 59}{space 4}-.0731351{col 72}{space 3} .0133284
+{txt}district_gender_5 {c |}{col 19}{res}{space 2} .0501895{col 31}{space 2} .0265353{col 42}{space 1}    1.89{col 51}{space 3}0.059{col 59}{space 4}-.0020205{col 72}{space 3} .1023996
+{txt}district_gender_6 {c |}{col 19}{res}{space 2}-.0650281{col 31}{space 2} .0236071{col 42}{space 1}   -2.75{col 51}{space 3}0.006{col 59}{space 4}-.1114768{col 72}{space 3}-.0185794
+{txt}district_gender_7 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+district_gender_8 {c |}{col 19}{res}{space 2}-.0181127{col 31}{space 2} .0297436{col 42}{space 1}   -0.61{col 51}{space 3}0.543{col 59}{space 4}-.0766354{col 72}{space 3}   .04041
+{txt}{space 3}gender_grade_1 {c |}{col 19}{res}{space 2}-.0236566{col 31}{space 2} .0180436{col 42}{space 1}   -1.31{col 51}{space 3}0.191{col 59}{space 4}-.0591587{col 72}{space 3} .0118455
+{txt}{space 3}gender_grade_2 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+{space 3}gender_grade_3 {c |}{col 19}{res}{space 2} .1217424{col 31}{space 2} .0320699{col 42}{space 1}    3.80{col 51}{space 3}0.000{col 59}{space 4} .0586425{col 72}{space 3} .1848423
+{txt}{space 3}gender_grade_4 {c |}{col 19}{res}{space 2} .1158264{col 31}{space 2} .0318468{col 42}{space 1}    3.64{col 51}{space 3}0.000{col 59}{space 4} .0531656{col 72}{space 3} .1784872
+{txt}{space 8}gXB_treat {c |}{col 19}{res}{space 2}-.0880287{col 31}{space 2} .0238244{col 42}{space 1}   -3.69{col 51}{space 3}0.000{col 59}{space 4} -.134905{col 72}{space 3}-.0411523
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .6179104{col 31}{space 2}  .024456{col 42}{space 1}   25.27{col 51}{space 3}0.000{col 59}{space 4} .5697914{col 72}{space 3} .6660294
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{smcl}
+{res}{sf}{ul off}{smcl}
+{txt}{sf}{ul off}Column: E2_Sallow_college_s
+{p 0 6 2}note: {bf:district_gender_1} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:district_gender_6} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gender_grade_1} omitted because of collinearity.{p_end}
+
+Linear regression                               Number of obs     = {res}     6,531
+                                                {txt}F(11, 313)        =  {res}    10.72
+                                                {txt}Prob > F          = {res}    0.0000
+                                                {txt}R-squared         = {res}    0.0262
+                                                {txt}Root MSE          =    {res} .25898
+
+{txt}{ralign 83:(Std. err. adjusted for {res:314} clusters in {res:Sschool_id})}
+{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 19}{c |}{col 31}    Robust
+{col 1}E2_Sallow_colle~s{col 19}{c |} Coefficient{col 31}  std. err.{col 43}      t{col 51}   P>|t|{col 59}     [95% con{col 72}f. interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}B_treat {c |}{col 19}{res}{space 2} .0505051{col 31}{space 2} .0122439{col 42}{space 1}    4.12{col 51}{space 3}0.000{col 59}{space 4} .0264142{col 72}{space 3} .0745959
+{txt}district_gender_1 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+district_gender_2 {c |}{col 19}{res}{space 2}-.0077924{col 31}{space 2} .0099395{col 42}{space 1}   -0.78{col 51}{space 3}0.434{col 59}{space 4} -.027349{col 72}{space 3} .0117642
+{txt}district_gender_3 {c |}{col 19}{res}{space 2}  .042181{col 31}{space 2} .0170625{col 42}{space 1}    2.47{col 51}{space 3}0.014{col 59}{space 4} .0086093{col 72}{space 3} .0757527
+{txt}district_gender_4 {c |}{col 19}{res}{space 2}-.0122149{col 31}{space 2} .0101054{col 42}{space 1}   -1.21{col 51}{space 3}0.228{col 59}{space 4} -.032098{col 72}{space 3} .0076682
+{txt}district_gender_5 {c |}{col 19}{res}{space 2} .0623032{col 31}{space 2} .0167281{col 42}{space 1}    3.72{col 51}{space 3}0.000{col 59}{space 4} .0293896{col 72}{space 3} .0952169
+{txt}district_gender_6 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+district_gender_7 {c |}{col 19}{res}{space 2} .0827711{col 31}{space 2}   .02035{col 42}{space 1}    4.07{col 51}{space 3}0.000{col 59}{space 4} .0427311{col 72}{space 3} .1228111
+{txt}district_gender_8 {c |}{col 19}{res}{space 2}-.0115245{col 31}{space 2} .0106956{col 42}{space 1}   -1.08{col 51}{space 3}0.282{col 59}{space 4}-.0325689{col 72}{space 3} .0095198
+{txt}{space 3}gender_grade_1 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+{space 3}gender_grade_2 {c |}{col 19}{res}{space 2} .0266646{col 31}{space 2} .0118638{col 42}{space 1}    2.25{col 51}{space 3}0.025{col 59}{space 4} .0033218{col 72}{space 3} .0500074
+{txt}{space 3}gender_grade_3 {c |}{col 19}{res}{space 2} .1480641{col 31}{space 2} .0185146{col 42}{space 1}    8.00{col 51}{space 3}0.000{col 59}{space 4} .1116353{col 72}{space 3} .1844928
+{txt}{space 3}gender_grade_4 {c |}{col 19}{res}{space 2}   .14656{col 31}{space 2} .0186695{col 42}{space 1}    7.85{col 51}{space 3}0.000{col 59}{space 4} .1098265{col 72}{space 3} .1832934
+{txt}{space 8}gXB_treat {c |}{col 19}{res}{space 2} -.039486{col 31}{space 2} .0142549{col 42}{space 1}   -2.77{col 51}{space 3}0.006{col 59}{space 4}-.0675336{col 72}{space 3}-.0114384
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .8098302{col 31}{space 2} .0163551{col 42}{space 1}   49.52{col 51}{space 3}0.000{col 59}{space 4} .7776505{col 72}{space 3}   .84201
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{smcl}
+{res}{sf}{ul off}{smcl}
+{txt}{sf}{ul off}Column: E2_Scommunity_allow_college_s
+{p 0 6 2}note: {bf:district_gender_5} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:district_gender_6} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gender_grade_2} omitted because of collinearity.{p_end}
+
+Linear regression                               Number of obs     = {res}     6,295
+                                                {txt}F(11, 313)        =  {res}     8.41
+                                                {txt}Prob > F          = {res}    0.0000
+                                                {txt}R-squared         = {res}    0.0142
+                                                {txt}Root MSE          =    {res} .46447
+
+{txt}{ralign 83:(Std. err. adjusted for {res:314} clusters in {res:Sschool_id})}
+{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 19}{c |}{col 31}    Robust
+{col 1}E2_Sc~w_college_s{col 19}{c |} Coefficient{col 31}  std. err.{col 43}      t{col 51}   P>|t|{col 59}     [95% con{col 72}f. interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}B_treat {c |}{col 19}{res}{space 2} .0268024{col 31}{space 2} .0174147{col 42}{space 1}    1.54{col 51}{space 3}0.125{col 59}{space 4}-.0074622{col 72}{space 3}  .061067
+{txt}district_gender_1 {c |}{col 19}{res}{space 2}-.1111703{col 31}{space 2} .0241432{col 42}{space 1}   -4.60{col 51}{space 3}0.000{col 59}{space 4}-.1586737{col 72}{space 3}-.0636668
+{txt}district_gender_2 {c |}{col 19}{res}{space 2} .0525844{col 31}{space 2} .0234598{col 42}{space 1}    2.24{col 51}{space 3}0.026{col 59}{space 4} .0064256{col 72}{space 3} .0987432
+{txt}district_gender_3 {c |}{col 19}{res}{space 2}-.0606493{col 31}{space 2} .0215586{col 42}{space 1}   -2.81{col 51}{space 3}0.005{col 59}{space 4}-.1030674{col 72}{space 3}-.0182312
+{txt}district_gender_4 {c |}{col 19}{res}{space 2}  -.03433{col 31}{space 2} .0247846{col 42}{space 1}   -1.39{col 51}{space 3}0.167{col 59}{space 4}-.0830956{col 72}{space 3} .0144355
+{txt}district_gender_5 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+district_gender_6 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+district_gender_7 {c |}{col 19}{res}{space 2}-.0231108{col 31}{space 2} .0253369{col 42}{space 1}   -0.91{col 51}{space 3}0.362{col 59}{space 4} -.072963{col 72}{space 3} .0267414
+{txt}district_gender_8 {c |}{col 19}{res}{space 2}-.0059916{col 31}{space 2} .0326811{col 42}{space 1}   -0.18{col 51}{space 3}0.855{col 59}{space 4}-.0702939{col 72}{space 3} .0583108
+{txt}{space 3}gender_grade_1 {c |}{col 19}{res}{space 2}-.0133811{col 31}{space 2} .0152444{col 42}{space 1}   -0.88{col 51}{space 3}0.381{col 59}{space 4}-.0433755{col 72}{space 3} .0166133
+{txt}{space 3}gender_grade_2 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+{space 3}gender_grade_3 {c |}{col 19}{res}{space 2}-.1172483{col 31}{space 2} .0274249{col 42}{space 1}   -4.28{col 51}{space 3}0.000{col 59}{space 4}-.1712088{col 72}{space 3}-.0632879
+{txt}{space 3}gender_grade_4 {c |}{col 19}{res}{space 2}-.1278017{col 31}{space 2} .0276939{col 42}{space 1}   -4.61{col 51}{space 3}0.000{col 59}{space 4}-.1822914{col 72}{space 3}-.0733119
+{txt}{space 8}gXB_treat {c |}{col 19}{res}{space 2}-.0366696{col 31}{space 2} .0252678{col 42}{space 1}   -1.45{col 51}{space 3}0.148{col 59}{space 4}-.0863858{col 72}{space 3} .0130467
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .7688586{col 31}{space 2} .0195261{col 42}{space 1}   39.38{col 51}{space 3}0.000{col 59}{space 4} .7304396{col 72}{space 3} .8072777
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{smcl}
+{res}{sf}{ul off}{smcl}
+{txt}{sf}{ul off}Column: E2_Scommunity_college_s
+{p 0 6 2}note: {bf:district_gender_5} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:district_gender_6} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gender_grade_1} omitted because of collinearity.{p_end}
+
+Linear regression                               Number of obs     = {res}     6,262
+                                                {txt}F(11, 313)        =  {res}     6.24
+                                                {txt}Prob > F          = {res}    0.0000
+                                                {txt}R-squared         = {res}    0.0102
+                                                {txt}Root MSE          =    {res} .44765
+
+{txt}{ralign 83:(Std. err. adjusted for {res:314} clusters in {res:Sschool_id})}
+{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 19}{c |}{col 31}    Robust
+{col 1}E2_Scommunity_c~s{col 19}{c |} Coefficient{col 31}  std. err.{col 43}      t{col 51}   P>|t|{col 59}     [95% con{col 72}f. interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}B_treat {c |}{col 19}{res}{space 2} .0377748{col 31}{space 2} .0169534{col 42}{space 1}    2.23{col 51}{space 3}0.027{col 59}{space 4} .0044178{col 72}{space 3} .0711318
+{txt}district_gender_1 {c |}{col 19}{res}{space 2}-.1255355{col 31}{space 2} .0223737{col 42}{space 1}   -5.61{col 51}{space 3}0.000{col 59}{space 4}-.1695573{col 72}{space 3}-.0815137
+{txt}district_gender_2 {c |}{col 19}{res}{space 2} .0530835{col 31}{space 2} .0226105{col 42}{space 1}    2.35{col 51}{space 3}0.020{col 59}{space 4} .0085957{col 72}{space 3} .0975713
+{txt}district_gender_3 {c |}{col 19}{res}{space 2}-.0564825{col 31}{space 2} .0203763{col 42}{space 1}   -2.77{col 51}{space 3}0.006{col 59}{space 4}-.0965742{col 72}{space 3}-.0163907
+{txt}district_gender_4 {c |}{col 19}{res}{space 2}-.0229109{col 31}{space 2} .0231778{col 42}{space 1}   -0.99{col 51}{space 3}0.324{col 59}{space 4}-.0685148{col 72}{space 3}  .022693
+{txt}district_gender_5 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+district_gender_6 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+district_gender_7 {c |}{col 19}{res}{space 2}-.0164944{col 31}{space 2} .0265691{col 42}{space 1}   -0.62{col 51}{space 3}0.535{col 59}{space 4}-.0687711{col 72}{space 3} .0357822
+{txt}district_gender_8 {c |}{col 19}{res}{space 2}-.0348793{col 31}{space 2} .0310834{col 42}{space 1}   -1.12{col 51}{space 3}0.263{col 59}{space 4} -.096038{col 72}{space 3} .0262795
+{txt}{space 3}gender_grade_1 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+{space 3}gender_grade_2 {c |}{col 19}{res}{space 2} .0043713{col 31}{space 2}  .015738{col 42}{space 1}    0.28{col 51}{space 3}0.781{col 59}{space 4}-.0265944{col 72}{space 3} .0353369
+{txt}{space 3}gender_grade_3 {c |}{col 19}{res}{space 2}-.0656175{col 31}{space 2} .0267738{col 42}{space 1}   -2.45{col 51}{space 3}0.015{col 59}{space 4}-.1182968{col 72}{space 3}-.0129382
+{txt}{space 3}gender_grade_4 {c |}{col 19}{res}{space 2}-.0611369{col 31}{space 2} .0262882{col 42}{space 1}   -2.33{col 51}{space 3}0.021{col 59}{space 4}-.1128609{col 72}{space 3}-.0094129
+{txt}{space 8}gXB_treat {c |}{col 19}{res}{space 2}-.0473704{col 31}{space 2} .0238107{col 42}{space 1}   -1.99{col 51}{space 3}0.048{col 59}{space 4}-.0942197{col 72}{space 3}-.0005211
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .7719776{col 31}{space 2} .0187246{col 42}{space 1}   41.23{col 51}{space 3}0.000{col 59}{space 4} .7351356{col 72}{space 3} .8088195
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{smcl}
+{res}{sf}{ul off}

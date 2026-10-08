@@ -1,0 +1,18 @@
+ {\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}  \begin{tabular}{@{\hskip\tabcolsep\extracolsep\fill}l*{5}{>{\centering\arraybackslash}m{2.3cm}}} \toprule
+ & Comfortable talking to students of the opposite sex & Do you sit next to students of the opposite sex in class? & At least once a week: Cook/clean/wash clothes & At least once a week: Take care of younger siblings/old persons & At least once a week: Went shopping for household provisions/paid bills \\
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &\multicolumn{1}{c}{(5)}         \\
+\midrule
+Treated             &       0.107\sym{***}&       0.081\sym{***}&       0.046\sym{***}&      -0.003         &       0.019\sym{**} \\
+                    &     [0.017]         &     [0.026]         &     [0.013]         &     [0.008]         &     [0.010]         \\
+\addlinespace
+Female              &       0.010         &      -0.028         &       0.276\sym{***}&      -0.054\sym{***}&      -0.420\sym{***}\\
+                    &     [0.015]         &     [0.019]         &     [0.013]         &     [0.009]         &     [0.014]         \\
+\addlinespace
+Treated x Female    &       0.005         &       0.078\sym{**} &      -0.045\sym{***}&      -0.029\sym{**} &       0.037\sym{**} \\
+                    &     [0.022]         &     [0.030]         &     [0.015]         &     [0.013]         &     [0.017]         \\
+\midrule
+Dep var mean        &       0.517         &       0.426         &       0.809         &       0.879         &       0.654         \\
+Number of students  &      13,176         &       8,787         &      13,908         &      12,611         &      13,882         \\
+\bottomrule
+\end{tabular}
+}

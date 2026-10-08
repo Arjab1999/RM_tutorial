@@ -1,0 +1,18 @@
+ {\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}  \begin{tabular}{@{\hskip\tabcolsep\extracolsep\fill}l*{5}{>{\centering\arraybackslash}m{2.3cm}}} \toprule
+ & Allowed to go to school alone or with friends? & During last week, was not absent from school & Has not missed school due to household responsibilities in last week & Disagree: Do you discourage your sister/cousin sister to work outside of home? & Disagree: Do you discourage your sister/cousin sister from studying in college i \\
+                    &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &\multicolumn{1}{c}{(5)}         \\
+\midrule
+Treated             &       0.006         &      -0.015         &       0.001         &       0.110\sym{***}&       0.112\sym{***}\\
+                    &     [0.004]         &     [0.016]         &     [0.018]         &     [0.019]         &     [0.016]         \\
+\addlinespace
+Female              &      -0.059\sym{***}&       0.045\sym{***}&       0.171\sym{***}&       0.330\sym{***}&       0.193\sym{***}\\
+                    &     [0.007]         &     [0.014]         &     [0.015]         &     [0.014]         &     [0.013]         \\
+\addlinespace
+Treated x Female    &       0.020\sym{**} &       0.006         &       0.003         &      -0.085\sym{***}&      -0.116\sym{***}\\
+                    &     [0.009]         &     [0.019]         &     [0.021]         &     [0.021]         &     [0.019]         \\
+\midrule
+Dep var mean        &       0.945         &       0.645         &       0.649         &       0.770         &       0.861         \\
+Number of students  &      13,231         &      12,430         &      12,695         &       6,855         &       7,072         \\
+\bottomrule
+\end{tabular}
+}

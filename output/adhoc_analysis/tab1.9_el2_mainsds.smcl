@@ -1,0 +1,217 @@
+{smcl}
+{txt}{sf}{ul off}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}F:\Exeter_coursework\Sem 1\Research Methods 1\149882-V1/output/adhoc_analysis/tab1.9_el2_mainsds.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 2 Oct 2026, 19:32:53
+{com}. qui log off
+{smcl}
+{com}{sf}{ul off}{smcl}
+{txt}{sf}{ul off}Column: gender_index2
+
+Linear regression                               Number of obs     = {res}    13,679
+                                                {txt}{help j_robustsingular:F(40, 313) }       =  {res}        .
+                                                {txt}Prob > F          = {res}         .
+                                                {txt}R-squared         = {res}    0.1097
+                                                {txt}Root MSE          =    {res} .90246
+
+{txt}{ralign 96:(Std. err. adjusted for {res:314} clusters in {res:Sschool_id})}
+{hline 31}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 32}{c |}{col 44}    Robust
+{col 1}             E2_Sgender_index2{col 32}{c |} Coefficient{col 44}  std. err.{col 56}      t{col 64}   P>|t|{col 72}     [95% con{col 85}f. interval]
+{hline 31}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 23}B_treat {c |}{col 32}{res}{space 2} .1950467{col 44}{space 2} .0336065{col 55}{space 1}    5.80{col 64}{space 3}0.000{col 72}{space 4} .1289235{col 85}{space 3} .2611698
+{txt}{space 20}highsd_std {c |}{col 32}{res}{space 2} .0308793{col 44}{space 2} .0345321{col 55}{space 1}    0.89{col 64}{space 3}0.372{col 72}{space 4}-.0370652{col 85}{space 3} .0988237
+{txt}{space 14}treat_highsd_std {c |}{col 32}{res}{space 2} .0414353{col 44}{space 2}  .048478{col 55}{space 1}    0.85{col 64}{space 3}0.393{col 72}{space 4}-.0539486{col 85}{space 3} .1368193
+{txt}{space 14}B_Sgender_index2 {c |}{col 32}{res}{space 2} .0888465{col 44}{space 2} .0127531{col 55}{space 1}    6.97{col 64}{space 3}0.000{col 72}{space 4} .0637538{col 85}{space 3} .1139391
+{txt}{space 5}E2_Swives_less_edu_n_flag {c |}{col 32}{res}{space 2}-.1128361{col 44}{space 2} .4994613{col 55}{space 1}   -0.23{col 64}{space 3}0.821{col 72}{space 4}-1.095562{col 85}{space 3}   .86989
+{txt}{space 6}E2_Sboy_more_oppo_n_flag {c |}{col 32}{res}{space 2}-.2944814{col 44}{space 2} .0388549{col 55}{space 1}   -7.58{col 64}{space 3}0.000{col 72}{space 4}-.3709312{col 85}{space 3}-.2180315
+{txt}{space 7}E2_Stown_studies_y_flag {c |}{col 32}{res}{space 2} -.222557{col 44}{space 2} .0532059{col 55}{space 1}   -4.18{col 64}{space 3}0.000{col 72}{space 4}-.3272435{col 85}{space 3}-.1178706
+{txt}{space 4}E2_Swoman_role_home_n_flag {c |}{col 32}{res}{space 2}-1.126234{col 44}{space 2} 1.506781{col 55}{space 1}   -0.75{col 64}{space 3}0.455{col 72}{space 4}-4.090934{col 85}{space 3} 1.838466
+{txt}{space 2}E2_Smen_better_suited_n_flag {c |}{col 32}{res}{space 2} .6211587{col 44}{space 2} .1341779{col 55}{space 1}    4.63{col 64}{space 3}0.000{col 72}{space 4} .3571539{col 85}{space 3} .8851635
+{txt}{space 2}E2_Smarriage_more_imp_n_flag {c |}{col 32}{res}{space 2} .5688574{col 44}{space 2} .2000017{col 55}{space 1}    2.84{col 64}{space 3}0.005{col 72}{space 4} .1753397{col 85}{space 3}  .962375
+{txt}{space 3}E2_Steacher_suitable_n_flag {c |}{col 32}{res}{space 2}-.7459788{col 44}{space 2} .1975555{col 55}{space 1}   -3.78{col 64}{space 3}0.000{col 72}{space 4}-1.134683{col 85}{space 3} -.357274
+{txt}{space 11}E2_Sallow_work_flag {c |}{col 32}{res}{space 2}-.0365698{col 44}{space 2} .0247844{col 55}{space 1}   -1.48{col 64}{space 3}0.141{col 72}{space 4}-.0853348{col 85}{space 3} .0121953
+{txt}{space 6}E2_Ssimilar_right_y_flag {c |}{col 32}{res}{space 2} .6081568{col 44}{space 2} .3143803{col 55}{space 1}    1.93{col 64}{space 3}0.054{col 72}{space 4} -.010409{col 85}{space 3} 1.226723
+{txt}{space 8}E2_Select_woman_y_flag {c |}{col 32}{res}{space 2} .1389384{col 44}{space 2} .4402401{col 55}{space 1}    0.32{col 64}{space 3}0.753{col 72}{space 4}-.7272657{col 85}{space 3} 1.005143
+{txt}{space 5}E2_Sman_final_deci_n_flag {c |}{col 32}{res}{space 2} 1.709438{col 44}{space 2} .9883861{col 55}{space 1}    1.73{col 64}{space 3}0.085{col 72}{space 4}-.2352831{col 85}{space 3} 3.654158
+{txt}{space 9}E2_Swoman_viol_n_flag {c |}{col 32}{res}{space 2}  -.56224{col 44}{space 2} .3996084{col 55}{space 1}   -1.41{col 64}{space 3}0.160{col 72}{space 4}-1.348498{col 85}{space 3} .2240182
+{txt}{space 2}E2_Scontrol_daughters_n_flag {c |}{col 32}{res}{space 2}-.1452309{col 44}{space 2} .0316494{col 55}{space 1}   -4.59{col 64}{space 3}0.000{col 72}{space 4}-.2075034{col 85}{space 3}-.0829583
+{txt}{space 10}E2_Sstudy_marry_flag {c |}{col 32}{res}{space 2}-1.624378{col 44}{space 2} .3663128{col 55}{space 1}   -4.43{col 64}{space 3}0.000{col 72}{space 4}-2.345124{col 85}{space 3}-.9036308
+{txt}{space 1}E2_Sgirl_marriage_age_19_flag {c |}{col 32}{res}{space 2} .4500089{col 44}{space 2} .1451645{col 55}{space 1}    3.10{col 64}{space 3}0.002{col 72}{space 4} .1643874{col 85}{space 3} .7356305
+{txt}{space 2}E2_Smarriage_age_diff_m_flag {c |}{col 32}{res}{space 2} .1127462{col 44}{space 2} .1420239{col 55}{space 1}    0.79{col 64}{space 3}0.428{col 72}{space 4}-.1666961{col 85}{space 3} .3921885
+{txt}{space 12}E2_Sfertility_flag {c |}{col 32}{res}{space 2}-.1904599{col 44}{space 2}  .108208{col 55}{space 1}   -1.76{col 64}{space 3}0.079{col 72}{space 4}-.4033669{col 85}{space 3} .0224471
+{txt}{space 21}gXB_treat {c |}{col 32}{res}{space 2}-.0793929{col 44}{space 2} .0437558{col 55}{space 1}   -1.81{col 64}{space 3}0.071{col 72}{space 4}-.1654857{col 85}{space 3} .0066998
+{txt}{space 18}gXhighsd_std {c |}{col 32}{res}{space 2} .0659575{col 44}{space 2} .0464097{col 55}{space 1}    1.42{col 64}{space 3}0.156{col 72}{space 4}-.0253569{col 85}{space 3} .1572719
+{txt}{space 12}gXtreat_highsd_std {c |}{col 32}{res}{space 2}-.0248013{col 44}{space 2} .0640529{col 55}{space 1}   -0.39{col 64}{space 3}0.699{col 72}{space 4}  -.15083{col 85}{space 3} .1012274
+{txt}{space 12}gXB_Sgender_index2 {c |}{col 32}{res}{space 2} .0699279{col 44}{space 2} .0165095{col 55}{space 1}    4.24{col 64}{space 3}0.000{col 72}{space 4} .0374443{col 85}{space 3} .1024115
+{txt}{space 3}gXE2_Swives_less_edu_n_flag {c |}{col 32}{res}{space 2}-.7491962{col 44}{space 2} .5958057{col 55}{space 1}   -1.26{col 64}{space 3}0.210{col 72}{space 4}-1.921487{col 85}{space 3} .4230944
+{txt}{space 4}gXE2_Sboy_more_oppo_n_flag {c |}{col 32}{res}{space 2} .0693532{col 44}{space 2} .3259753{col 55}{space 1}    0.21{col 64}{space 3}0.832{col 72}{space 4}-.5720266{col 85}{space 3} .7107329
+{txt}{space 5}gXE2_Stown_studies_y_flag {c |}{col 32}{res}{space 2} .3443088{col 44}{space 2} .0412566{col 55}{space 1}    8.35{col 64}{space 3}0.000{col 72}{space 4} .2631335{col 85}{space 3} .4254841
+{txt}{space 2}gXE2_Swoman_role_home_n_flag {c |}{col 32}{res}{space 2} 4.855476{col 44}{space 2} 1.858921{col 55}{space 1}    2.61{col 64}{space 3}0.009{col 72}{space 4} 1.197915{col 85}{space 3} 8.513038
+{txt}gXE2_Smen_better_suited_n_flag {c |}{col 32}{res}{space 2}-.8123458{col 44}{space 2} .2853484{col 55}{space 1}   -2.85{col 64}{space 3}0.005{col 72}{space 4}-1.373789{col 85}{space 3}-.2509022
+{txt}gXE2_Smarriage_more_imp_n_flag {c |}{col 32}{res}{space 2}-.8363768{col 44}{space 2} .2825374{col 55}{space 1}   -2.96{col 64}{space 3}0.003{col 72}{space 4}-1.392289{col 85}{space 3}-.2804642
+{txt}{space 1}gXE2_Steacher_suitable_n_flag {c |}{col 32}{res}{space 2} 1.153494{col 44}{space 2} .2810946{col 55}{space 1}    4.10{col 64}{space 3}0.000{col 72}{space 4} .6004198{col 85}{space 3} 1.706567
+{txt}{space 9}gXE2_Sallow_work_flag {c |}{col 32}{res}{space 2} .0340396{col 44}{space 2} .0327238{col 55}{space 1}    1.04{col 64}{space 3}0.299{col 72}{space 4}-.0303468{col 85}{space 3}  .098426
+{txt}{space 4}gXE2_Ssimilar_right_y_flag {c |}{col 32}{res}{space 2}-.8789774{col 44}{space 2} .6620234{col 55}{space 1}   -1.33{col 64}{space 3}0.185{col 72}{space 4}-2.181556{col 85}{space 3} .4236014
+{txt}{space 6}gXE2_Select_woman_y_flag {c |}{col 32}{res}{space 2} -.734713{col 44}{space 2} .5501232{col 55}{space 1}   -1.34{col 64}{space 3}0.183{col 72}{space 4} -1.81712{col 85}{space 3}  .347694
+{txt}{space 3}gXE2_Sman_final_deci_n_flag {c |}{col 32}{res}{space 2}-1.907835{col 44}{space 2} 1.217393{col 55}{space 1}   -1.57{col 64}{space 3}0.118{col 72}{space 4}-4.303143{col 85}{space 3} .4874744
+{txt}{space 7}gXE2_Swoman_viol_n_flag {c |}{col 32}{res}{space 2} .1954328{col 44}{space 2} .6181642{col 55}{space 1}    0.32{col 64}{space 3}0.752{col 72}{space 4} -1.02085{col 85}{space 3} 1.411715
+{txt}gXE2_Scontrol_daughters_n_flag {c |}{col 32}{res}{space 2}  .073523{col 44}{space 2} .0417266{col 55}{space 1}    1.76{col 64}{space 3}0.079{col 72}{space 4}-.0085772{col 85}{space 3} .1556231
+{txt}{space 8}gXE2_Sstudy_marry_flag {c |}{col 32}{res}{space 2} 1.722305{col 44}{space 2} .3789344{col 55}{space 1}    4.55{col 64}{space 3}0.000{col 72}{space 4} .9767238{col 85}{space 3} 2.467885
+{txt}gXE2_Sgirl_marriage_age_19_fla {c |}{col 32}{res}{space 2}-.1925627{col 44}{space 2} .1649592{col 55}{space 1}   -1.17{col 64}{space 3}0.244{col 72}{space 4}-.5171319{col 85}{space 3} .1320065
+{txt}gXE2_Smarriage_age_diff_m_flag {c |}{col 32}{res}{space 2}-.0185822{col 44}{space 2}  .161216{col 55}{space 1}   -0.12{col 64}{space 3}0.908{col 72}{space 4}-.3357864{col 85}{space 3} .2986219
+{txt}{space 10}gXE2_Sfertility_flag {c |}{col 32}{res}{space 2}-.0123977{col 44}{space 2} .1324486{col 55}{space 1}   -0.09{col 64}{space 3}0.925{col 72}{space 4}-.2729999{col 85}{space 3} .2482045
+{txt}{space 25}_cons {c |}{col 32}{res}{space 2} .3168366{col 44}{space 2} .0536449{col 55}{space 1}    5.91{col 64}{space 3}0.000{col 72}{space 4} .2112864{col 85}{space 3} .4223868
+{txt}{hline 31}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{smcl}
+{res}{sf}{ul off}{smcl}
+{txt}{sf}{ul off}Column: aspiration_index2
+{p 0 6 2}note: {bf:E2_Scol_course_want_stem_flag} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gXB_treat} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gXhighsd_std} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gXtreat_highsd_std} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gXB_Saspiration_index2} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gXE2_Stwel_score_exp_m_flag} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gXE2_Sdiscuss_educ_flag} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gXE2_Scont_educ_flag} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gXE2_Shighest_educ_m_flag} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gXE2_Soccupa_25_y_flag} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gXE2_Splan_college_flag} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gXE2_Scol_course_want_y_flag} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gXE2_Scol_course_want_stem_fla} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gXE2_Scont_have_job_y_flag} omitted because of collinearity.{p_end}
+
+Linear regression                               Number of obs     = {res}     7,560
+                                                {txt}F(12, 274)        =  {res}   310.05
+                                                {txt}Prob > F          = {res}    0.0000
+                                                {txt}R-squared         = {res}    0.4606
+                                                {txt}Root MSE          =    {res}    .73
+
+{txt}{ralign 96:(Std. err. adjusted for {res:275} clusters in {res:Sschool_id})}
+{hline 31}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 32}{c |}{col 44}    Robust
+{col 1}         E2_Saspiration_index2{col 32}{c |} Coefficient{col 44}  std. err.{col 56}      t{col 64}   P>|t|{col 72}     [95% con{col 85}f. interval]
+{hline 31}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 23}B_treat {c |}{col 32}{res}{space 2}-.0352066{col 44}{space 2} .0241827{col 55}{space 1}   -1.46{col 64}{space 3}0.147{col 72}{space 4}-.0828142{col 85}{space 3}  .012401
+{txt}{space 20}highsd_std {c |}{col 32}{res}{space 2}  .028516{col 44}{space 2}  .024524{col 55}{space 1}    1.16{col 64}{space 3}0.246{col 72}{space 4}-.0197635{col 85}{space 3} .0767954
+{txt}{space 14}treat_highsd_std {c |}{col 32}{res}{space 2} .0237871{col 44}{space 2} .0345406{col 55}{space 1}    0.69{col 64}{space 3}0.492{col 72}{space 4}-.0442116{col 85}{space 3} .0917858
+{txt}{space 10}B_Saspiration_index2 {c |}{col 32}{res}{space 2} .1079219{col 44}{space 2} .0086439{col 55}{space 1}   12.49{col 64}{space 3}0.000{col 72}{space 4}  .090905{col 85}{space 3} .1249388
+{txt}{space 5}E2_Stwel_score_exp_m_flag {c |}{col 32}{res}{space 2} -.221201{col 44}{space 2} .0205805{col 55}{space 1}  -10.75{col 64}{space 3}0.000{col 72}{space 4} -.261717{col 85}{space 3} -.180685
+{txt}{space 9}E2_Sdiscuss_educ_flag {c |}{col 32}{res}{space 2}-1.024012{col 44}{space 2} .3155597{col 55}{space 1}   -3.25{col 64}{space 3}0.001{col 72}{space 4}-1.645242{col 85}{space 3}-.4027827
+{txt}{space 12}E2_Scont_educ_flag {c |}{col 32}{res}{space 2}-.1608349{col 44}{space 2} .0788571{col 55}{space 1}   -2.04{col 64}{space 3}0.042{col 72}{space 4}-.3160778{col 85}{space 3} -.005592
+{txt}{space 7}E2_Shighest_educ_m_flag {c |}{col 32}{res}{space 2}-.0526391{col 44}{space 2} .0260072{col 55}{space 1}   -2.02{col 64}{space 3}0.044{col 72}{space 4}-.1038383{col 85}{space 3}-.0014399
+{txt}{space 10}E2_Soccupa_25_y_flag {c |}{col 32}{res}{space 2}-.3398265{col 44}{space 2} .0575265{col 55}{space 1}   -5.91{col 64}{space 3}0.000{col 72}{space 4}-.4530765{col 85}{space 3}-.2265765
+{txt}{space 9}E2_Splan_college_flag {c |}{col 32}{res}{space 2} 1.389449{col 44}{space 2} .1129085{col 55}{space 1}   12.31{col 64}{space 3}0.000{col 72}{space 4} 1.167171{col 85}{space 3} 1.611727
+{txt}{space 4}E2_Scol_course_want_y_flag {c |}{col 32}{res}{space 2}-1.966763{col 44}{space 2} .0484642{col 55}{space 1}  -40.58{col 64}{space 3}0.000{col 72}{space 4}-2.062173{col 85}{space 3}-1.871354
+{txt}{space 1}E2_Scol_course_want_stem_flag {c |}{col 32}{res}{space 2}        0{col 44}{txt}  (omitted)
+{space 6}E2_Scont_have_job_y_flag {c |}{col 32}{res}{space 2}-.3547147{col 44}{space 2} .0394828{col 55}{space 1}   -8.98{col 64}{space 3}0.000{col 72}{space 4}-.4324429{col 85}{space 3}-.2769865
+{txt}{space 21}gXB_treat {c |}{col 32}{res}{space 2}        0{col 44}{txt}  (omitted)
+{space 18}gXhighsd_std {c |}{col 32}{res}{space 2}        0{col 44}{txt}  (omitted)
+{space 12}gXtreat_highsd_std {c |}{col 32}{res}{space 2}        0{col 44}{txt}  (omitted)
+{space 8}gXB_Saspiration_index2 {c |}{col 32}{res}{space 2}        0{col 44}{txt}  (omitted)
+{space 3}gXE2_Stwel_score_exp_m_flag {c |}{col 32}{res}{space 2}        0{col 44}{txt}  (omitted)
+{space 7}gXE2_Sdiscuss_educ_flag {c |}{col 32}{res}{space 2}        0{col 44}{txt}  (omitted)
+{space 10}gXE2_Scont_educ_flag {c |}{col 32}{res}{space 2}        0{col 44}{txt}  (omitted)
+{space 5}gXE2_Shighest_educ_m_flag {c |}{col 32}{res}{space 2}        0{col 44}{txt}  (omitted)
+{space 8}gXE2_Soccupa_25_y_flag {c |}{col 32}{res}{space 2}        0{col 44}{txt}  (omitted)
+{space 7}gXE2_Splan_college_flag {c |}{col 32}{res}{space 2}        0{col 44}{txt}  (omitted)
+{space 2}gXE2_Scol_course_want_y_flag {c |}{col 32}{res}{space 2}        0{col 44}{txt}  (omitted)
+gXE2_Scol_course_want_stem_fla {c |}{col 32}{res}{space 2}        0{col 44}{txt}  (omitted)
+{space 4}gXE2_Scont_have_job_y_flag {c |}{col 32}{res}{space 2}        0{col 44}{txt}  (omitted)
+{space 25}_cons {c |}{col 32}{res}{space 2} .3247065{col 44}{space 2} .0194315{col 55}{space 1}   16.71{col 64}{space 3}0.000{col 72}{space 4} .2864525{col 85}{space 3} .3629606
+{txt}{hline 31}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{smcl}
+{res}{sf}{ul off}{smcl}
+{txt}{sf}{ul off}Column: behavior_index2
+
+Linear regression                               Number of obs     = {res}    13,677
+                                                {txt}{help j_robustsingular:F(25, 313) }       =  {res}        .
+                                                {txt}Prob > F          = {res}         .
+                                                {txt}R-squared         = {res}    0.0541
+                                                {txt}Root MSE          =    {res} .98101
+
+{txt}{ralign 97:(Std. err. adjusted for {res:314} clusters in {res:Sschool_id})}
+{hline 32}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 33}{c |}{col 45}    Robust
+{col 1}            E2_Sbehavior_index2{col 33}{c |} Coefficient{col 45}  std. err.{col 57}      t{col 65}   P>|t|{col 73}     [95% con{col 86}f. interval]
+{hline 32}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 24}B_treat {c |}{col 33}{res}{space 2} .3028399{col 45}{space 2} .0404256{col 56}{space 1}    7.49{col 65}{space 3}0.000{col 73}{space 4} .2232996{col 86}{space 3} .3823802
+{txt}{space 21}highsd_std {c |}{col 33}{res}{space 2} .0383728{col 45}{space 2} .0394736{col 56}{space 1}    0.97{col 65}{space 3}0.332{col 73}{space 4}-.0392944{col 86}{space 3} .1160399
+{txt}{space 15}treat_highsd_std {c |}{col 33}{res}{space 2}-.0035942{col 45}{space 2} .0591996{col 56}{space 1}   -0.06{col 65}{space 3}0.952{col 73}{space 4}-.1200738{col 86}{space 3} .1128853
+{txt}{space 13}B_Sbehavior_index2 {c |}{col 33}{res}{space 2} .0981643{col 45}{space 2} .0165693{col 56}{space 1}    5.92{col 65}{space 3}0.000{col 73}{space 4}  .065563{col 86}{space 3} .1307656
+{txt}{space 5}E2_Stalk_opp_gen_comm_flag {c |}{col 33}{res}{space 2}-.1404458{col 45}{space 2} .1446628{col 56}{space 1}   -0.97{col 65}{space 3}0.332{col 73}{space 4}-.4250803{col 86}{space 3} .1441887
+{txt}{space 6}E2_Ssit_opp_gen_comm_flag {c |}{col 33}{res}{space 2}-.1766612{col 45}{space 2} .2421929{col 56}{space 1}   -0.73{col 65}{space 3}0.466{col 73}{space 4}-.6531933{col 86}{space 3} .2998709
+{txt}{space 3}E2_Sfriend_opp_gen_comm_flag {c |}{col 33}{res}{space 2}-.2666942{col 45}{space 2} .0231734{col 56}{space 1}  -11.51{col 65}{space 3}0.000{col 73}{space 4}-.3122896{col 86}{space 3}-.2210987
+{txt}{space 5}E2_Splay_opp_gen_comm_flag {c |}{col 33}{res}{space 2}-.0146333{col 45}{space 2} .2011839{col 56}{space 1}   -0.07{col 65}{space 3}0.942{col 73}{space 4}-.4104772{col 86}{space 3} .3812106
+{txt}E2_Stalk_week_opp_gen_comm_flag {c |}{col 33}{res}{space 2} .0438797{col 45}{space 2}  .193827{col 56}{space 1}    0.23{col 65}{space 3}0.821{col 73}{space 4} -.337489{col 86}{space 3} .4252483
+{txt}{space 7}E2_Scook_clean_comm_flag {c |}{col 33}{res}{space 2}-.9706654{col 45}{space 2} .1932078{col 56}{space 1}   -5.02{col 65}{space 3}0.000{col 73}{space 4}-1.350816{col 86}{space 3}-.5905152
+{txt}E2_Sabsent_sch_hhwork_comm_flag {c |}{col 33}{res}{space 2}-.1356885{col 45}{space 2} .0355041{col 56}{space 1}   -3.82{col 65}{space 3}0.000{col 73}{space 4}-.2055454{col 86}{space 3}-.0658315
+{txt}{space 9}E2_Sdisc_col_comm_flag {c |}{col 33}{res}{space 2} .0218857{col 45}{space 2} .2563557{col 56}{space 1}    0.09{col 65}{space 3}0.932{col 73}{space 4}-.4825125{col 86}{space 3} .5262839
+{txt}{space 8}E2_Sdisc_work_comm_flag {c |}{col 33}{res}{space 2} .0221036{col 45}{space 2} .2567237{col 56}{space 1}    0.09{col 65}{space 3}0.931{col 73}{space 4}-.4830189{col 86}{space 3}  .527226
+{txt}{space 22}gXB_treat {c |}{col 33}{res}{space 2}-.1245113{col 45}{space 2} .0411998{col 56}{space 1}   -3.02{col 65}{space 3}0.003{col 73}{space 4}-.2055749{col 86}{space 3}-.0434477
+{txt}{space 19}gXhighsd_std {c |}{col 33}{res}{space 2} .0349629{col 45}{space 2}  .043956{col 56}{space 1}    0.80{col 65}{space 3}0.427{col 73}{space 4}-.0515237{col 86}{space 3} .1214494
+{txt}{space 13}gXtreat_highsd_std {c |}{col 33}{res}{space 2} -.016204{col 45}{space 2} .0671005{col 56}{space 1}   -0.24{col 65}{space 3}0.809{col 73}{space 4}-.1482291{col 86}{space 3} .1158211
+{txt}{space 11}gXB_Sbehavior_index2 {c |}{col 33}{res}{space 2}-.0512707{col 45}{space 2} .0215194{col 56}{space 1}   -2.38{col 65}{space 3}0.018{col 73}{space 4}-.0936116{col 86}{space 3}-.0089298
+{txt}{space 3}gXE2_Stalk_opp_gen_comm_flag {c |}{col 33}{res}{space 2} .0119543{col 45}{space 2} .1489768{col 56}{space 1}    0.08{col 65}{space 3}0.936{col 73}{space 4}-.2811683{col 86}{space 3}  .305077
+{txt}{space 4}gXE2_Ssit_opp_gen_comm_flag {c |}{col 33}{res}{space 2}-.0062403{col 45}{space 2} .2835087{col 56}{space 1}   -0.02{col 65}{space 3}0.982{col 73}{space 4} -.564064{col 86}{space 3} .5515834
+{txt}{space 1}gXE2_Sfriend_opp_gen_comm_flag {c |}{col 33}{res}{space 2}-.3199015{col 45}{space 2} 2.091891{col 56}{space 1}   -0.15{col 65}{space 3}0.879{col 73}{space 4}-4.435848{col 86}{space 3} 3.796045
+{txt}{space 3}gXE2_Splay_opp_gen_comm_flag {c |}{col 33}{res}{space 2}-.1039198{col 45}{space 2} .2315945{col 56}{space 1}   -0.45{col 65}{space 3}0.654{col 73}{space 4}-.5595986{col 86}{space 3} .3517589
+{txt}{space 1}gXE2_Stalk_week_opp_gen_comm_f {c |}{col 33}{res}{space 2} .0631432{col 45}{space 2} .2082967{col 56}{space 1}    0.30{col 65}{space 3}0.762{col 73}{space 4}-.3466957{col 86}{space 3}  .472982
+{txt}{space 5}gXE2_Scook_clean_comm_flag {c |}{col 33}{res}{space 2} 1.643804{col 45}{space 2} .3873661{col 56}{space 1}    4.24{col 65}{space 3}0.000{col 73}{space 4}  .881633{col 86}{space 3} 2.405975
+{txt}{space 1}gXE2_Sabsent_sch_hhwork_comm_f {c |}{col 33}{res}{space 2} -.299013{col 45}{space 2} .0417456{col 56}{space 1}   -7.16{col 65}{space 3}0.000{col 73}{space 4}-.3811504{col 86}{space 3}-.2168755
+{txt}{space 7}gXE2_Sdisc_col_comm_flag {c |}{col 33}{res}{space 2}-.1050862{col 45}{space 2} .2924121{col 56}{space 1}   -0.36{col 65}{space 3}0.720{col 73}{space 4}-.6804281{col 86}{space 3} .4702556
+{txt}{space 6}gXE2_Sdisc_work_comm_flag {c |}{col 33}{res}{space 2}-.1896518{col 45}{space 2}  .307678{col 56}{space 1}   -0.62{col 65}{space 3}0.538{col 73}{space 4}-.7950305{col 86}{space 3} .4157269
+{txt}{space 26}_cons {c |}{col 33}{res}{space 2}   .04695{col 45}{space 2} .0198355{col 56}{space 1}    2.37{col 65}{space 3}0.019{col 73}{space 4} .0079222{col 86}{space 3} .0859777
+{txt}{hline 32}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{smcl}
+{res}{sf}{ul off}{smcl}
+{txt}{sf}{ul off}Column: scholar_index2
+{p 0 6 2}note: {bf:gXB_treat} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gXhighsd_std} omitted because of collinearity.{p_end}
+{p 0 6 2}note: {bf:gXtreat_highsd_std} omitted because of collinearity.{p_end}
+
+Linear regression                               Number of obs     = {res}     7,347
+                                                {txt}F(3, 274)         =  {res}     1.72
+                                                {txt}Prob > F          = {res}    0.1635
+                                                {txt}R-squared         = {res}    0.0013
+                                                {txt}Root MSE          =    {res} .49382
+
+{txt}{ralign 84:(Std. err. adjusted for {res:275} clusters in {res:Sschool_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}E2_Sscholar_index2{col 20}{c |} Coefficient{col 32}  std. err.{col 44}      t{col 52}   P>|t|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 11}B_treat {c |}{col 20}{res}{space 2} .0329802{col 32}{space 2} .0201659{col 43}{space 1}    1.64{col 52}{space 3}0.103{col 60}{space 4}-.0067195{col 73}{space 3} .0726799
+{txt}{space 8}highsd_std {c |}{col 20}{res}{space 2} .0193548{col 32}{space 2} .0175828{col 43}{space 1}    1.10{col 52}{space 3}0.272{col 60}{space 4}-.0152597{col 73}{space 3} .0539693
+{txt}{space 2}treat_highsd_std {c |}{col 20}{res}{space 2}-.0051168{col 32}{space 2}  .025043{col 43}{space 1}   -0.20{col 52}{space 3}0.838{col 60}{space 4}-.0544179{col 73}{space 3} .0441843
+{txt}{space 9}gXB_treat {c |}{col 20}{res}{space 2}        0{col 32}{txt}  (omitted)
+{space 6}gXhighsd_std {c |}{col 20}{res}{space 2}        0{col 32}{txt}  (omitted)
+gXtreat_highsd_std {c |}{col 20}{res}{space 2}        0{col 32}{txt}  (omitted)
+{space 13}_cons {c |}{col 20}{res}{space 2}       .4{col 32}{space 2} .0137651{col 43}{space 1}   29.06{col 52}{space 3}0.000{col 60}{space 4} .3729013{col 73}{space 3} .4270987
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{smcl}
+{res}{sf}{ul off}{smcl}
+{txt}{sf}{ul off}Column: petition_index2
+
+Linear regression                               Number of obs     = {res}    13,303
+                                                {txt}F(6, 313)         =  {res}    18.90
+                                                {txt}Prob > F          = {res}    0.0000
+                                                {txt}R-squared         = {res}    0.0128
+                                                {txt}Root MSE          =    {res} .36151
+
+{txt}{ralign 84:(Std. err. adjusted for {res:314} clusters in {res:Sschool_id})}
+{hline 19}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 20}{c |}{col 32}    Robust
+{col 1}E2_Spetition_ind~2{col 20}{c |} Coefficient{col 32}  std. err.{col 44}      t{col 52}   P>|t|{col 60}     [95% con{col 73}f. interval]
+{hline 19}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 11}B_treat {c |}{col 20}{res}{space 2}-.0297173{col 32}{space 2} .0122297{col 43}{space 1}   -2.43{col 52}{space 3}0.016{col 60}{space 4}  -.05378{col 73}{space 3}-.0056546
+{txt}{space 8}highsd_std {c |}{col 20}{res}{space 2}-.0373385{col 32}{space 2} .0117382{col 43}{space 1}   -3.18{col 52}{space 3}0.002{col 60}{space 4}-.0604342{col 73}{space 3}-.0142427
+{txt}{space 2}treat_highsd_std {c |}{col 20}{res}{space 2} .0229599{col 32}{space 2} .0175489{col 43}{space 1}    1.31{col 52}{space 3}0.192{col 60}{space 4}-.0115688{col 73}{space 3} .0574886
+{txt}{space 9}gXB_treat {c |}{col 20}{res}{space 2} .0942037{col 32}{space 2} .0147675{col 43}{space 1}    6.38{col 52}{space 3}0.000{col 60}{space 4} .0651475{col 73}{space 3} .1232599
+{txt}{space 6}gXhighsd_std {c |}{col 20}{res}{space 2} .0961931{col 32}{space 2} .0151212{col 43}{space 1}    6.36{col 52}{space 3}0.000{col 60}{space 4}  .066441{col 73}{space 3} .1259452
+{txt}gXtreat_highsd_std {c |}{col 20}{res}{space 2}-.0819923{col 32}{space 2}  .023331{col 43}{space 1}   -3.51{col 52}{space 3}0.001{col 60}{space 4}-.1278977{col 73}{space 3} -.036087
+{txt}{space 13}_cons {c |}{col 20}{res}{space 2}  .143252{col 32}{space 2} .0075726{col 43}{space 1}   18.92{col 52}{space 3}0.000{col 60}{space 4} .1283523{col 73}{space 3} .1581517
+{txt}{hline 19}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{smcl}
+{res}{sf}{ul off}
