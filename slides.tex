@@ -1,0 +1,360 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+
+% --- Basic packages ---
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{threeparttable} % For the notes section
+\usepackage{multirow}   % For multi-row cells
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem}
+\usepackage{forest}
+\definecolor{PastelPink}{HTML}{FFB7C5}    % Baby Pink
+\definecolor{PastelBlue}{HTML}{AEC6CF}    % Baby Blue
+\definecolor{MintGreen}{HTML}{B7E4C7}     % Soft Green
+\definecolor{SoftYellow}{HTML}{FFFACD}    % Lemon Chiffon
+\definecolor{SoftLavender}{HTML}{E6E6FA}  % Light Purple
+\definecolor{PastelPeach}{HTML}{FFDAB9}   % Light Orange
+\definecolor{Periwinkle}{HTML}{CCCCFF}    % Light Blue-Violet
+\definecolor{LightCoral}{HTML}{F08080}    % Soft Red
+% Define the bullet shapes globally for the entire document
+\setbeamerfont{itemize/enumerate body}{size=\normalsize}
+
+% level 2: nested \begin{itemize}
+\setbeamerfont{itemize/enumerate subbody}{size=\small}
+
+% level 3: nested inside that
+\setbeamerfont{itemize/enumerate subsubbody}{size=\footnotesize}
+ % First level (main item)
+\setlist[itemize,1]{
+    label=\textcolor{softaccent}{\large\textbullet},
+    itemsep=7pt,          % space between items
+    topsep=5pt            % space above/below the list
+}
+
+% Level 2 bullets: smaller spacing
+\setlist[itemize,2]{
+    label=\textcolor{softaccent}{\small\textendash},
+    font=\footnotesize,
+    itemsep=4pt,          % tighter spacing
+    topsep=4pt
+}
+\setlist[itemize,3]{
+    label=\textcolor{softaccent}{\small\circ},
+    itemsep=2pt,          % tighter spacing
+    topsep=2pt
+}
+% --- Beamer setup ---
+\usetheme{default}
+\usecolortheme{dolphin}
+
+% Soft colors
+\definecolor{softbg}{HTML}{F7F5F0}      % warm, light background
+\definecolor{softtext}{HTML}{222222}    % dark gray instead of black
+\definecolor{softaccent}{HTML}{3B6A8F}  % muted blue for structure
+
+% Overall text & background
+\setbeamercolor{background canvas}{bg=softbg}
+\setbeamercolor{normal text}{fg=softtext,bg=softbg}
+
+% Titles and structure
+\setbeamercolor{title}{fg=softaccent}
+\setbeamercolor{frametitle}{fg=softaccent}
+\setbeamercolor{structure}{fg=softaccent}
+
+\usepackage{sourcesanspro}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Frame title font
+\setbeamerfont{frametitle}{size=\Large}
+
+% Templates
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{section in toc}[sections numbered]
+
+% --- Document Metadata ---
+\title{Reshaping Adolescents’ Gender Attitudes: Evidence from a School-Based Experiment in India}
+
+\author{Diva Dhar, Tarun Jain, and Seema Jayachandran}
+\institute[Your University]{\large AER 2022}
+\date{Presentation by Arjab Bose}
+
+
+
+% --- Custom Commands (for math in the slides) ---
+\newcommand{\qhi}{q_h}
+\newcommand{\qlo}{q_l}
+\newcommand{\rh}{\rho_h}
+\newcommand{\rl}{\rho_l}
+\newcommand{\muup}{\mu^s}
+\newcommand{\muorig}{\mu}
+\newcommand{\bup}{b^s}
+\newcommand{\bg}{b^g}
+\newcommand{\bb}{b^b}
+
+\begin{document}
+
+% =================================
+% SLIDE 1: TITLE PAGE
+% =================================
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% =================================
+% MOTIVATION & OVERVIEW
+% =================================
+\begin{frame}{Motivation}
+  \begin{itemize}
+    \item  \textcolor{RoyalBlue}{Gender inequality} is acute in many developing countries, and it is deeply rooted in cultural norms.
+   
+    
+    
+   
+   \item India, and Haryana in particular, shows this clearly:
+      \begin{itemize}
+        \item Only 0.80 girls enroll in tertiary education for every boy. 
+        \item Child marriage is common. 
+        \item India has one of the world's lowest female labor force participation rates.
+        \item The child sex ratio is 1.09 boys per girl nationally and 1.20 in Haryana, the most male-skewed state. 
+      \end{itemize}
+    
+    
+    \item \textcolor{RoyalBlue}{Key Question: Can a school-based discussion program make adolescents' gender attitudes and behavior more equal, and do the effects persist?}
+    
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Introduction}
+  \begin{itemize}
+    \item Past literature has focused on policy constraints. This paper tests whether discussion and persuasion can change \textcolor{RoyalBlue}{preferences}. 
+
+    \item The intervention was a school-based program named Legion of Stars. 
+   \item Method $\rightarrow$ \textcolor{RoyalBlue}{Randomized Control Trial (RCT)} 
+      
+    \item What did the program do?
+   \begin{itemize}
+       \item 45-minute classroom discussions every three weeks for 2.5 school years, for students in grades 7-10.
+       \item Facts and endorsement of gender equality, reflection on their own and society's views (stereotypes, roles at home, girls' education, women's employment, harassment). 
+       \item Some sessions taught communication skills, such as persuading parents to allow later marriage.
+       
+   \end{itemize}
+      
+     
+     
+\end{itemize} 
+\end{frame}
+
+\begin{frame}{Research Question \& Results Preview}
+  \begin{itemize}
+    \item \textcolor{RoyalBlue}{Can a school-based intervention that promotes gender equality change gender attitudes of adolescents?}
+    \item \textbf{Main outcome:} Gender attitudes measured as an index of survey responses on women's roles and rights (e.g., women working outside the home, more women in politics).
+   
+    \item \textbf{Findings:}
+    
+      \begin{itemize}
+        \item The program shifted attitudes toward gender equality by 0.18 standard deviations after 3.5 months. 
+        \item Approximately 16\% of the initial gender-regressive views were converted into support for gender equality.
+        \item Two years after the program ended, the effect was still 0.16 standard deviations.
+       
+        
+      \end{itemize}
+    
+  \end{itemize}
+\end{frame}
+
+% =================================
+% THEORY
+% =================================
+\begin{frame}{Data and Empirical Strategy}
+  \begin{itemize}
+    \item \textcolor{RoyalBlue}{Sample}: 314 government secondary schools in 4 Haryana districts (150 treatment, 164 control), about 14,000 students surveyed. Randomization was at the school level.
+    \item \textcolor{RoyalBlue}{Surveys}: Baseline in 2013-14 (grades 6-7, about 12 years old), end line 1 about 3.5 months after the program ended, end line 2 about 2 years later.
+
+    \item \textcolor{RoyalBlue}{Empirical Specification}: 
+
+\begin{equation}
+Y_{ij} = \beta_0 + \beta_1 \, Treated_j + \beta_2 \, Y^0_{ij} + \beta_3 \, X_{ij} + \epsilon_{ij}
+\end{equation}
+
+\begin{itemize}
+    \item $Y_{ij}$: end line outcome for student $i$ in school $j$
+    \item $Treated_j$: equals 1 if school $j$ was assigned to treatment, 0 otherwise
+    \item $\beta_1$: Average treatment effect 
+    \item $Y^0_{ij}$: baseline analog of the outcome
+    \item $X_{ij}$: grade-gender and district-gender fixed effects
+   
+\end{itemize}
+
+
+  \end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}{Effect on Gender Attitudes: Short Run vs. Medium Run}
+
+\centering
+\small
+\newsavebox{\tablebox}
+\sbox{\tablebox}{%
+\begin{tabular}{lcc}
+\hline\hline
+ & \begin{tabular}[c]{@{}c@{}}Gender attitudes index\\ (3.5 months after)\end{tabular}
+ & \begin{tabular}[c]{@{}c@{}}Gender attitudes index\\ (about 2 years after)\end{tabular} \\
+ & (1) & (2) \\
+\hline
+Treated & 0.180 & 0.160 \\
+ & [0.020] & [0.019] \\[4pt]
+Control group mean & 0.000 & 0.333 \\
+Basic controls & Yes & Yes \\
+Number of students & 13,987 & 13,679 \\
+\hline\hline
+\end{tabular}%
+}
+
+\usebox{\tablebox}
+
+\vspace{12pt}
+\begin{minipage}{\wd\tablebox}
+\footnotesize \raggedright
+\textit{Notes:} Outcome is the gender attitudes index. All regressions control for the baseline analog of the outcome, grade-gender and district-gender fixed effects, and missing flags for each variable used to construct the index. Standard errors in brackets, clustered by school.
+\end{minipage}
+
+\end{frame}
+% =================================
+% DATA
+% =================================
+\begin{frame}{Coding/Workflow}
+  \begin{itemize}
+      \item This project uses Stata. 
+      \item Everything runs from one script: Master do file $\rightarrow$ global directories $\rightarrow$ do files, ado files $\rightarrow$ work on data.
+      \item Sequence: Baseline 1 cleaning $\rightarrow$ Endline 1 cleaning $\rightarrow$ Endline 2 cleaning $\rightarrow$ Analysis (Tables, Figures).  
+      \item Key Packages: outreg2, egenmore, unique, estout/esttab, coefplot, corrtex, putexcel. \textcolor{RoyalBlue}{(ssc install)}
+      \item \textcolor{RoyalBlue}{Key Features} : 
+      \begin{itemize}
+          \item Loops: automate repetitive tasks, making the code shorter and reproducible \textcolor{RoyalBlue}{(foreach)}. 
+          
+          \item Folder Structure: Data(Rawdata,Cleandata), Code(do files), Output(Figures,Tables,other results).
+      \end{itemize} 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Folder Structure}
+
+\centering
+
+\begin{forest}
+for tree={
+    grow'=0,
+    align=left,
+    edge={->},
+    parent anchor=east,
+    child anchor=west,
+    l sep=15pt,
+    s sep=7pt,
+    font=\large
+}
+[Research Folder
+    [Data
+        [Raw Data]
+        [Clean Data]
+    ]
+    [Code
+        [Do Files]
+    ]
+    [Output
+        [Figures]
+        [Tables]
+        [Other Results]
+    ]
+]
+\end{forest}
+
+\end{frame}
+
+% =================================
+% EMPIRICS: PREDICTION 1
+% =================================
+\begin{frame}[fragile]{Coding/Special Requirements}
+  \begin{itemize}
+    \item \textcolor{RoyalBlue}{global macros}: the main purpose is to store a folder location once and then reuse it throughout.
+    \item Can be called with \textcolor{RoyalBlue}{\$name}, e.g.:
+  \end{itemize}
+
+  \vspace{0.5pt}
+  {\footnotesize
+  \begin{verbatim}
+global main_loc "F:\Exeter_coursework\...\149882-V1"
+global deid "$main_loc/data"
+global baseline_student_raw "$deid/baseline_student_raw"
+  \end{verbatim}
+  }
+  \begin{itemize}
+      \item Write comments to organize do file (*****).
+      \item Requirements: 
+      \begin{itemize}
+          \item License to Stata or other software.
+          \item Central High Performance Computing Cluster/Supercomputer.
+          \item Understanding Stata is strictly \textcolor{RoyalBlue}{case sensitive}.
+          
+      \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+
+% =================================
+% EMPIRICS: PREDICTION 2
+% =================================
+\begin{frame}{README}
+  \begin{itemize}
+    
+    \item \textcolor{RoyalBlue}{What the README does well:}
+    \begin{itemize}
+        \item Clearly identifies the \textbf{master do-file} and explains that it runs the analysis in sequence.
+        \item Provides a detailed list of the \textbf{data, code files, software requirements ,and folder structure}.
+        \item Clear Diagram of folder workflow. 
+        
+    \end{itemize}
+    \item \textcolor{RoyalBlue}{What could be clearer:}
+    \begin{itemize}
+        
+        \item A map in the paper requires \textbf{ArcGIS}, but the README does not specify anything on it or provide the underlying step-by-step workflow. 
+    
+  \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+% =================================
+% Conclusion
+% =================================
+\begin{frame}{Replication and Conclusion}
+  \begin{itemize}
+    \item The do file was not hard to replicate apart from minor issues such as fixing paths and installing packages. 
+    \item The map (districts covering the survey) could not be reproduced. 
+    \item The slides are prepared in Latex (Overleaf). 
+    \item Github Link: \href{https://github.com/Arjab1999/RM_tutorial}{\textcolor{RoyalBlue}{GitHub Repository}}
+    \item \textcolor{RoyalBlue}{Takeaway}: Very organized and smooth do file setup. 
+
+
+    \end{itemize}
+
+    
+    
+  
+\end{frame}
+
+
+
+
+
+\end{document}
+
